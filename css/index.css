@@ -1,0 +1,331 @@
+@charset 'utf-8';
+html,body,ul,li,ol,dl,dd,dt,p,h1,h2,h3,h4,h5,h6,form,fieldset,legend,img,input,figure,figcaption{margin:0;padding:0;}
+h1,h2,h3,h4,h5,h6,p,span{font-size:12px;font-weight:normal;}
+ul,ol,li{list-style:none;font-size: 12px}
+b,strong{font-weight:normal;}
+em,i{font-style:normal;}
+a{text-decoration: none;color:#000;font-size:12px}
+input{outline:none;border:none}
+*{box-sizing:border-box;}
+.clearfix:after{clear:both; content:''; font-size:0; display:block; visibility:hidden; height:0}
+body{min-width:1190px;overflow: auto;}
+/* header */
+header{
+    width:100%;
+    height:30px;
+    background:#000;   
+}
+.inner-header{
+    width:1190px;
+    height:100%;
+    margin:0 auto;
+    display: flex;   
+}
+.inner-header .leftheader{
+    height:100%; 
+    padding-right:60px;   
+}
+.inner-header .leftheader span,a{
+    line-height:30px;
+    color:#fff;
+}
+.inner-header .leftheader span:nth-child(1){
+    padding:0 28px 0 12px;
+}
+.inner-header .leftheader span:nth-child(2) a{
+    padding-right:10px;
+    margin-right:10px;
+    border-right:1px solid #fff;
+}
+.inner-header .leftheader span:nth-child(3) a{
+    padding-right:20px;
+}
+.inner-header .leftheader span a:hover{
+    color:red;
+}
+.inner-header #centerheader{
+    height:100%;
+    padding-right:330px; 
+    overflow: hidden;
+    position: relative;   
+}
+.inner-header #centerheader ul{
+    position: absolute;
+    top:0;
+    left:0;
+}
+.inner-header #centerheader ul.animate{
+    transition: top 2s;
+}
+.inner-header #centerheader li a{
+    color:#fff;
+}
+.inner-header #centerheader li a:hover{
+    color:red;
+}
+.inner-header .rightheader{
+    height:100%;
+}
+.inner-header .rightheader #bigul{
+    height:100%;
+    width:450px;
+}
+.inner-header .rightheader #bigul li{
+    float: left;
+    margin:0 12px;
+}
+.inner-header .rightheader #bigul li:last-of-type{
+    margin:0 0 0 15px;
+}
+.inner-header .rightheader #bigul li a{
+    line-height:30px;
+    color:#fff;
+}
+.inner-header .rightheader #bigul li a:hover{
+    color:red;
+}
+.inner-header .rightheader #bigul li:nth-child(1){
+    width:90px;
+    position: relative;
+}
+.inner-header .rightheader #bigul li:nth-child(1) img:nth-of-type(2){
+    position: absolute;
+    top:13px;
+    right:0;
+}
+.inner-header .rightheader #bigul li:nth-child(1) img:nth-of-type(3){
+    display: none;
+    position: absolute;
+    top:13px;
+    right:0;
+}
+.inner-header .rightheader #bigul li:nth-child(1):hover img:nth-of-type(2){
+    display: none;
+}
+.inner-header .rightheader #bigul li:nth-child(1):hover img:nth-of-type(3){
+    display: block;
+}
+.inner-header .rightheader #bigul li:nth-child(1) ul{
+    display: none;
+    width:88px;
+    height:30px;
+    position: relative;
+    border:1px solid #ededed;
+    z-index: 3;
+}
+.inner-header .rightheader #bigul li:nth-child(1) ul img{
+    position: absolute;
+    top:-7px;
+    left:50%;
+    z-index: 2;
+}
+.inner-header .rightheader #bigul li:nth-child(1) ul li a{
+    color:#000;
+}
+.inner-header .rightheader #bigul li:nth-child(1) ul li a:hover{
+    color:red;
+}
+.inner-header .rightheader #bigul li:nth-child(1):hover ul{
+    display: block;
+}
+.inner-header .rightheader #bigul li:nth-child(1) ul:hover{
+    background:#ededed;
+}
+.inner-header .rightheader #bigul  .li1,.li2{
+    display: flex;
+    align-items: center;
+}
+.inner-header .rightheader #bigul .li1 img,.li2 img{
+    padding-right:5px;
+}
+.title{
+    width:1190px;
+    height:56px;
+    margin:24px auto 0;
+}
+.title .lefttitle{
+    float: left;
+    padding-right:80px;
+}
+.title .centertitle{
+    width:630px;
+    float: left;
+}
+.title .centertitle p:first-child{
+    width:100%;
+    height:36px;
+}
+.title .centertitle input:nth-of-type(1){
+    width:540px;
+    height:36px;
+    border:1px solid #dcdcdc;
+    padding-left:20px;
+    color:#969697;
+    float: left;
+}
+.title .centertitle input:nth-of-type(2){
+    width:90px;
+    height:36px;
+    background:#000;
+    color:#fff;
+    text-align: center;
+    float: left;
+}
+.title .centertitle p a{
+    line-height:20px;
+    padding-right:10px;
+    color:#c8cacc;
+}
+.title .centertitle p a:hover{
+    color:red;
+    cursor: pointer;
+}
+.title .righttitle{
+    float: right;
+    width:190px;
+    height:34px;
+    border:1px solid #f4f4f4;
+}
+.title .righttitle img{
+    float: left;
+    padding:3px 10px 0 43px;
+}
+.title .righttitle span{
+    float: left;
+    font-size:16px;
+    line-height:34px;
+    padding-right:5px;
+}
+.title .righttitle span:nth-of-type(2){
+    color:red;
+    font-weight: bold;
+}
+.search{
+    width:1190px;
+    height:36px;
+    margin:0 auto;
+    position: relative;
+}
+.search img:nth-of-type(1){
+    float: left;
+}
+.search img:nth-of-type(2){
+    position: absolute;
+    right:0;
+    top:-4px;
+}
+.search .outul{
+    float: left;
+}
+.search .outul .outli{
+    float: left;
+    padding-left:40px;   
+    width:105px;
+    height:26px; 
+    margin-top:10px;  
+}
+.search .outul .outli a{
+    line-height:26px;
+    font-size:16px;
+    color:#000;
+}
+.search .outul .outli a:hover{
+    color:red;
+}
+.search .outul .outli:nth-of-type(4){
+    position: relative;
+}
+.search .outul .outli:nth-of-type(4):hover ul{
+    display: block;
+}
+.search .outul .outli:nth-of-type(4) ul{
+    display: none;
+    width:525px;
+    height:350px;
+    padding:20px;
+    border:1px solid #f2f2f2;
+    position: absolute;
+    top:28px;
+    left:-262px;
+    z-index: 2;
+}
+.search .outul .outli:nth-of-type(4) ul ol{
+    width:100%;
+    height:100%;
+}
+.search .outul .outli:nth-of-type(4) ul ol img{
+    position: absolute;
+    top:-8px;
+    left:330px;
+    z-index: 3;
+}
+.search .outul .outli:nth-of-type(4) ul ol li{
+    float: left;   
+    height:100%;
+}
+.search .outul .outli:nth-of-type(4) ul li:nth-of-type(1){
+    width: 281px;
+    padding-right:20px;
+    border-right:1px solid #d4d4d4;
+}
+.search .outul .outli:nth-of-type(4) ul li:nth-of-type(1) p{
+    width:260px;
+    margin:0 auto;
+}
+.search .outul .outli:nth-of-type(4) ul li:nth-of-type(1) input{
+    width:100%;
+    height:42px;
+    background:#eee;
+    border-radius:21px;
+    color:#a3a4a4;
+    padding-left:20px;
+}
+.search .outul .outli:nth-of-type(4) ul li:nth-of-type(1) p:nth-child(2){
+    display: flex;
+    flex-wrap: wrap;
+    padding:12px 8px 0;
+}
+.search .outul .outli:nth-of-type(4) ul li:nth-of-type(1) p:nth-child(2) span{
+    display: block;
+    width:38px;
+    height:38px;
+    padding:0 25px 25px 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+.search .outul .outli:nth-of-type(4) ul li:nth-of-type(1) p:nth-child(2) span:nth-child(7n){
+    padding:0 0 25px 0;
+    width:13px;
+}
+.search .outul .outli:nth-of-type(4) ul li:nth-of-type(1) p:nth-child(2) span:last-child{
+    padding:0 9px 25px 0;
+}
+.search .outul .outli:nth-of-type(4) ul li:nth-of-type(1) p:nth-child(2) span:hover{
+    color:red;
+    cursor: pointer;
+}
+.search .outul .outli:nth-of-type(4) ul .secondli{
+    overflow: auto;
+    width: 202px;
+    padding-left:20px;
+}
+.search .outul .outli:nth-of-type(4) ul .secondli p span{
+    display: block;
+    line-height:20px;
+}
+.search .outul .outli:nth-of-type(4) ul .secondli p span:first-child{
+    font-weight: bold;
+    height:36px;
+    line-height:40px;
+}
+.search .outul .outli:nth-of-type(4) ul .secondli p span:hover{
+    color:red;
+    cursor: pointer;
+}
+.search .outul .outli:nth-of-type(4) ul .secondli p span:first-child:hover{
+    color:#000;
+}
+
+
+
+
