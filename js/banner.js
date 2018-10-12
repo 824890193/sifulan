@@ -18,11 +18,17 @@ oBanner.onmouseover = function(){
     oLeft.style.opacity = 0.3;
     oRight.style.opacity = 0.3;
 }
+oBanner.onmouseout = function(){
+    oLeft.style.opacity = 0;
+    oRight.style.opacity = 0;
+}
 oRight.onmouseenter = function(){
     oRight.style.opacity = 0.6;
+    oLeft.style.opacity = 0.3;
 }
 oLeft.onmouseenter = function(){
     oLeft.style.opacity = 0.6;
+    oRight.style.opacity = 0.3;
 }
 oLeft.onclick = function(){
     if(index == 0){
