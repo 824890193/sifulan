@@ -9,13 +9,13 @@ timer= function(){
         oUl.style.top = 0;
         nowIndex = 1;
         setTimeout(function(){
-            oUl.className = "animate";
+            oUl.className = "move";
             oUl.style.top = -30 * nowIndex + "px";
         },50)
         return 0;
     }else{
         nowIndex ++;           
-        oUl.className = "animate";
+        oUl.className = "move";
         oUl.style.top = -30 * nowIndex + "px";
     } 
     console.log(nowIndex);  
@@ -28,4 +28,4 @@ oUl.onmouseleave = function(){
     autoPlayTimer = setInterval(timer, 3000);
 }
 var autoPlayTimer = setInterval(timer, 3000);
-// 
+
