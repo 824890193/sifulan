@@ -538,7 +538,7 @@ section .banner2 .innerbanner2 a{
     padding-left:10px;
     float: left;
 }
-/* box1 */
+/* 第一块 */
 .box1{
     width:100%;
     height:430px;
@@ -673,7 +673,7 @@ section .banner2 .innerbanner2 a{
     bottom:0;
 }
 .box1 .inner-box1 .rightbox1 ul:nth-of-type(2){
-    opacity: 0;
+    display: none;
 }
 .box1 .inner-box1 .rightbox1 .innerrightbox1 li{
     float: left;
@@ -723,7 +723,7 @@ section .banner2 .innerbanner2 a{
     height:60px;
     position: fixed;
     left:0;
-    top:-70px;
+    top:-65px;
     background:#fff;
     z-index: 10;
     box-shadow: 0 5px 5px #999;
@@ -766,7 +766,7 @@ section .banner2 .innerbanner2 a{
     height:200px;
     position: fixed;
     right:136px;
-    bottom:110px;
+    bottom:60px;
     z-index: 10;
     display: none; 
 }
@@ -818,10 +818,43 @@ section .banner2 .innerbanner2 a{
     text-align: center;
     background:#494949;
 }
+/* 左侧导航栏 */
+#left-ul{
+    position: fixed;
+    top:70px;
+    left:136px;
+    background:#fff;
+    z-index: 10;
+    display: none;
+}
+#left-ul ul{
+    width:40px;
+    height:475px;
+    padding:10px 8px;
+}
+#left-ul ul li{
+    width:100%;
+    height:65px;
+}
+#left-ul ul li a{
+    display: block;
+    width:100%;
+    height:100%;
+    color:#9f9f9f;
+    line-height:14px;
+    padding-top:20px;
+}
+#left-ul ul li a.active{
+    color:red;
+}
+#left-ul ul li a:hover{
+    color:red;
+}
 /* 第二块 */
 .box2{
     width:100%;
     height:656px;
+    margin-bottom:80px;
 }
 .box2 .innerbox2{
     width:1190px;
@@ -917,7 +950,8 @@ section .banner2 .innerbanner2 a{
 /* 第三块 */
 .box3{
     width:100%;
-    height:605px;
+    height:606px;
+    margin-bottom:80px;
 }
 .box3 .innerbox3{
     width:1190px;
@@ -934,13 +968,334 @@ section .banner2 .innerbanner2 a{
     line-height:36px;
 }
 .box3 .innerbox3 .topbox3 .topbox3-1 span:nth-of-type(1){
+    float: left;
     font-size:24px;
     font-weight: bold;
     padding-right:12px;
 }
 .box3 .innerbox3 .topbox3 .topbox3-1 span:nth-of-type(2){
+    float: left;
+    padding-top:3px;
     font-size:20px;
 }
 .box3 .innerbox3 .topbox3 .topbox3-2{
     float: right;
+    height:100%;
+    padding-top:12px;
+}
+.box3 .innerbox3 .topbox3 .topbox3-2 li{
+    float: left;
+    border-right:1px solid #d0d0d0;
+}
+.box3 .innerbox3 .topbox3 .topbox3-2 li:last-of-type{
+    border-right:none;
+}
+.box3 .innerbox3 .topbox3 .topbox3-2 li a{
+    display: block;
+    height:16px;
+    font-size: 14px;
+    line-height:16px;
+    padding:0 10px;
+    color:#333;
+}
+.box3 .innerbox3 .topbox3 .topbox3-2 li a:hover{
+    color:#000;
+    font-weight:bold;
+}
+.box3 .innerbox3 .middlebox3{
+    width:100%;
+    height:500px;
+    margin-bottom:10px;
+}
+.box3 .innerbox3 .middlebox3 .middlebox3-1{
+    float: left;
+    width:390px;
+    height:100%;
+}
+.box3 .innerbox3 .middlebox3 .middlebox3-2{
+    width:800px;
+    height:100%;
+    float: left;
+}
+.box3 .innerbox3 .middlebox3 .middlebox3-2 li{
+    float: left;
+    width:199px;
+    height:249px;
+    background:#fff;
+    margin:0 1px 1px 0;
+}
+.box3 .innerbox3 .middlebox3 .middlebox3-2 li a{
+    display: block;
+    width:100%;
+    height:100%;
+    padding:10px;
+    color:#000;
+    position: relative;
+}
+.box3 .innerbox3 .middlebox3 .middlebox3-2 li a p:first-of-type{
+    height:18px;
+    font-weight: bold;
+    font-size:14px;
+}
+.box3 .innerbox3 .middlebox3 .middlebox3-2 li a p:nth-of-type(2){
+    height:16px;
+    margin-bottom:5px;
+    font-size: 14px;
+}                                                  
+.box3 .innerbox3 .middlebox3 .middlebox3-2 li a p:nth-of-type(3){
+    height:14px;
+    font-size: 13px;
+}
+.box3 .innerbox3 .middlebox3 .middlebox3-2 li a img{
+    position: absolute;
+    right:0;
+    bottom:0;
+    transition: all .5s;
+}
+.box3 .innerbox3 .bottombox3{
+    width:100%;
+    height:60px;
+    background:#fff;
+}
+.box3 .innerbox3 .bottombox3 .bottombox3-1{
+    width:100%;
+    height:100%;
+}
+.box3 .innerbox3 .bottombox3 .bottombox3-1 li{
+    float: left;
+    height:100%;
+}
+.box3 .innerbox3 .bottombox3 .bottombox3-1 li a{
+    float: left;
+}
+.box3 .innerbox3 .bottombox3 .bottombox3-1 li a:hover{
+    opacity:0.7;
+}
+.box3 .innerbox3 .bottombox3 .bottombox3-1 li em{
+    float: left;
+    margin-top:22px;
+    width:2px;
+    height:16px;
+    background:#b1b1b1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.lastbox{
+    width:100%;
+    height:1076px;
+    margin-bottom:80px;
+}
+.lastbox .innerlastbox{
+    width:1190px;
+    height:100%;
+    margin:0 auto;
+}
+.lastbox .innerlastbox .lastboxtop{
+    width:100%;
+    height:36px;
+    line-height:36px;
+}
+.lastbox .innerlastbox .lastboxtop span:nth-of-type(1){
+    float: left;
+    font-size:24px;
+    font-weight: bold;
+    padding-right:12px;
+}
+.lastbox .innerlastbox .lastboxtop span:nth-of-type(2){
+    float: left;
+    padding-top:3px;
+    font-size:20px;
+}
+.lastbox .innerlastbox .lastboxbottom{
+    width:100%;
+    height:1040px;
+    background:#fff;
+    display: flex;
+    flex-wrap: wrap;
+}
+.lastbox .innerlastbox .lastboxbottom div{
+    width:238px;
+    height:260px;
+    padding:0 30px 0 20px;
+    border-right:1px solid #f5f5f5;
+    border-bottom:1px solid #f5f5f5;
+}
+.lastbox .innerlastbox .lastboxbottom div img{
+    float: left;
+}
+.lastbox .innerlastbox .lastboxbottom div p{
+    float: left;
+    width:100%;
+    font-size:14px;
+    height:20px;
+}
+.lastbox .innerlastbox .lastboxbottom div p:nth-of-type(1){
+    font-size:12px;
+    font-weight: bold;
+}
+.lastbox .innerlastbox .lastboxbottom div p:nth-of-type(2){
+    margin-bottom:5px;
+}
+.lastbox .innerlastbox .lastboxbottom div p a{
+    float: left;
+    color:#000;
+    font-size:14px;
+    height:16px;
+    line-height:16px;
+    padding-bottom:3px;
+}
+.lastbox .innerlastbox .lastboxbottom div p a:hover{
+    color:red;
+}
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    width:100%;
+    height:490px;
+    margin-top:80px;
+    background:#fff;
+}
+footer .innerfooter{
+    width:100%;
+    height:100%;
+}
+footer .innerfooter .footertop{
+    width:1190px;
+    height:390px;
+    margin:0 auto;
+}
+footer .innerfooter .footertop .footertop1{
+    width:100%;
+    height:160px;
+    border-bottom:2px solid #000;
+}
+footer .innerfooter .footertop .footertop1 .footertop1-1{
+    float: left;
+    width:236px;
+    height:100px;
+}
+footer .innerfooter .footertop .footertop1 .footertop1-1 img{
+    display: block;
+    margin:30px auto 8px;
+}
+footer .innerfooter .footertop .footertop1 .footertop1-1 p{
+    padding-top:10px;
+    font-weight:bold;
+    text-align: center;
+}
+footer .innerfooter .footertop .footertop1 .xian{
+    float: left;
+    width:1px;
+    height:24px;
+    margin-top:65px;
+    background:#9d9d9d;
+}
+footer .innerfooter .footertop .footertop2{
+    width:100%;
+    height:230px;
+    position: relative;
+}
+footer .innerfooter .footertop .footertop2 .footertop2-li{
+    float: left;
+    width:190px;
+    height:100%;
+    padding-top:25px;
+}
+footer .innerfooter .footertop .footertop2 .lastli{
+    float: left;
+    width:220px;
+    height:100%;
+    padding-top:25px;
+}
+footer .innerfooter .footertop .footertop2 li .topfootertop2{
+    font-weight: bold;
+    color:#000;
+}
+footer .innerfooter .footertop .footertop2 li ul{
+    width:100%;
+    height:100px;
+    padding-top:10px;
+}
+footer .innerfooter .footertop .footertop2 li ul .topfootertop2-li{
+    float: left;
+    width:100%;
+    height:26px;
+}
+footer .innerfooter .footertop .footertop2 li ul .topfootertop2-li a{
+    float: left;
+    width:100%;
+    height:100%;
+    line-height:26px;
+    color:#696969;
+}
+footer .innerfooter .footertop .footertop2 li ul .topfootertop2-li a:hover{
+    color:red;
+}
+footer .innerfooter .footertop .footertop2 img{
+    position: absolute;
+    right:0;
+    top:0;
+}
+footer .innerfooter .footerbottom{
+    width:100%;
+    height:100px;
+    background:#000;
+}
+footer .innerfooter .footerbottom .innerfooterbottom{
+    width:1190px;
+    height:100%;
+    margin:0 auto;
+    position: relative;
+}
+footer .innerfooter .footerbottom .innerfooterbottom .centerfooter{
+    width:750px;
+    height:100%;
+    padding-top:30px;
+    margin-left:165px;
+}
+footer .innerfooter .footerbottom .innerfooterbottom .centerfooter p{
+    width:100%;
+}
+footer .innerfooter .footerbottom .innerfooterbottom .centerfooter p a{
+    padding-right:45px;
+    color:#6f6f6f;
+    font-size:13px;
+}
+footer .innerfooter .footerbottom .innerfooterbottom .centerfooter span{
+    display: block;
+    text-align: center;
+    color:#6f6f6f;
+}
+footer .innerfooter .footerbottom .innerfooterbottom .bottombottom{
+    position: absolute;
+    right:120px;
+    top:30px;
 }

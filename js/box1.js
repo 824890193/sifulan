@@ -62,6 +62,19 @@ oBanner1.onmouseleave = function(){
     autoPlayTimer = setInterval(oRight1.onclick, 4000);
 }
 var autoPlayTimer = setInterval(oRight1.onclick, 4000);
+//box右侧大框切换
+var xiabiao = document.querySelectorAll("#remen span");
+var box = document.querySelectorAll(".rightbox1 ul");
+for(var q = 0 ; q < xiabiao.length ; q++){
+    xiabiao[q].index = q;
+    xiabiao[q].onclick = function(){
+        for(var w =0 ; w < box.length; w++){
+            box[w].style.display = "none";  
+        }
+        var index = this.index;
+        box[index].style.display = "block";
+    }
+}
 //box1右侧鼠标悬浮特效
 $("#remen span").click(function(){
     $(this).addClass("active")
@@ -72,19 +85,7 @@ $(".innerrightbox1 li").hover(function(){
 },function(){
     $(this).find(".more").hide();
 })
-//box右侧大框切换
-var xiabiao = document.querySelectorAll("#remen span");
-var box = document.querySelectorAll(".rightbox1 ul");
-for(var q = 0 ; q < xiabiao.length ; q++){
-    xiabiao[q].index = q;
-    xiabiao[q].onclick = function(){
-        for(var w =0 ; w < box.length; w++){
-            box[w].style.opacity = 0;  
-        }
-        var index = this.index;
-        box[index].style.opacity = 1;
-    }
-}
+
 
 
 
