@@ -420,7 +420,7 @@ section .inner-section .inner-section1 .banner1 a.active{
 }
 section .inner-section .inner-section1 .button{
     position: absolute;
-    left:560px;
+    left:450px;
     bottom:20px;
     z-index:3;
 }
@@ -543,6 +543,7 @@ section .banner2 .innerbanner2 a{
     width:100%;
     height:430px;
     padding-top:70px;
+    margin-bottom:70px;
 }
 .box1 .inner-box1{
     width:1190px;
@@ -720,11 +721,13 @@ section .banner2 .innerbanner2 a{
 #xipan{
     width:100%;
     height:60px;
-    position: absolute;
+    position: fixed;
     left:0;
-    top:-60px;
+    top:-70px;
+    background:#fff;
+    z-index: 10;
     box-shadow: 0 5px 5px #999;
-    transition: translate 1s;
+    transition: all 1s;
 }
 #xipan .innerxipan{
     width:1190px;
@@ -739,6 +742,7 @@ section .banner2 .innerbanner2 a{
     width:630px;
     height:36px;
     float: left;
+    margin-top:10px;
 }
 #xipan .innerxipan p input:nth-of-type(1){
     width:540px;
@@ -756,8 +760,187 @@ section .banner2 .innerbanner2 a{
     text-align: center;
     float: left;
 }
+/* 右侧导航栏 */
+#right-ul{
+    width:40px;
+    height:200px;
+    position: fixed;
+    right:136px;
+    bottom:110px;
+    z-index: 10;
+    display: none; 
+}
+#right-ul #right-ul1{
+    width:100%;
+    height:100%;
+    position: relative;
+}
+#right-ul #right-ul1 .bgul{
+    position: absolute;
+    top:0;
+    left:0;
+}
+#right-ul #right-ul1 .right-ul1-1{
+    width:100%;
+    height:100%;
+    position: absolute;
+    left:0;
+    top:0;
+}
+#right-ul #right-ul1 .right-ul1-1 li{
+    width:100%;
+    height:40px;
+    position: relative;
+}
+#right-ul #right-ul1 .right-ul1-1 li div{
+    width:120px;
+    height:100%;
+    position: absolute;
+    top:0;
+    right:0;
+    display: none;
+}
+#right-ul #right-ul1 .right-ul1-1 li div .ul1-li1{
+    float: right;
+    width:40px;
+    height:100%;
+}
+#right-ul #right-ul1 .right-ul1-1 li .li1-1{
+    float: left;
+    width:80px;
+    height:40px;
+}
+#right-ul #right-ul1 .right-ul1-1 li .li1-1 a{
+    display: block;
+    width:100%;
+    height:100%;
+    line-height:40px;
+    text-align: center;
+    background:#494949;
+}
 /* 第二块 */
 .box2{
     width:100%;
-    height:
+    height:656px;
+}
+.box2 .innerbox2{
+    width:1190px;
+    height:100%;
+    margin:0 auto;
+}
+.box2 .innerbox2 .topbox2{
+    width:100%;
+    height:36px;
+    line-height:36px;
+}
+.box2 .innerbox2 .topbox2 span{
+    float: left;
+    height:100%;
+}
+.box2 .innerbox2 .topbox2 span:nth-of-type(1){
+    font-size:24px;
+    font-weight: bold;
+    padding-right:12px;
+}
+.box2 .innerbox2 .topbox2 span:nth-of-type(2){
+    font-size:20px;
+    padding-top:3px;
+}
+.box2 .innerbox2 .bottombox2{
+    width:100%;
+    height:620px;
+}
+.box2 .innerbox2 .bottombox2 .bottombox2-1{
+    float: left;
+    width:590px;
+    height:300px;
+    margin-bottom:10px;
+    position: relative;
+}
+.box2 .innerbox2 .bottombox2 div:nth-of-type(2n+1){
+    margin-right:10px;
+}
+.box2 .innerbox2 .bottombox2 .bottombox2-1 .bg{
+    position: absolute;
+    left:0;
+    top:0;
+}
+.box2 .innerbox2 .bottombox2 .bottombox2-1 .box2-ul{
+    position: absolute;
+    top:10px;
+    right:10px;
+    width:210px;
+    height:281px;
+}
+.box2 .innerbox2 .bottombox2 .bottombox2-1 .box2-ul li{
+    width:100%;
+    height:140px;
+    background:#fff;
+    padding-left:10px;    
+}
+.box2 .innerbox2 .bottombox2 .bottombox2-1 .box2-ul li:first-child{
+    margin-bottom:1px;
+}
+.box2 .innerbox2 .bottombox2 .bottombox2-1 .box2-ul li a{
+    display: block;
+    width:100%;
+    height:100%;
+    color:#000;
+    position: relative;
+}
+.box2 .innerbox2 .bottombox2 .bottombox2-1 .box2-ul li a p:first-of-type{
+    padding-top:10px;
+    line-height:16px;
+    font-weight: bold;
+    font-size:14px;
+}
+.box2 .innerbox2 .bottombox2 .bottombox2-1 .box2-ul li a p:nth-of-type(2){
+    padding-bottom:3px;
+    font-size: 14px;
+}
+.box2 .innerbox2 .bottombox2 .bottombox2-1 .box2-ul li a p:nth-of-type(3){
+    font-size: 14px;
+}
+.box2 .innerbox2 .bottombox2 .bottombox2-1 .box2-ul li a img{
+    width:90px;
+    height:90px;
+    position: absolute;
+    right:0;
+    bottom:0;
+    transition: all .5s;
+}
+.box2 .innerbox2 .bottombox2 .bottombox2-1 .box2-gif{
+    display: block;
+    width:100%;
+    height:100%;
+}
+/* 第三块 */
+.box3{
+    width:100%;
+    height:605px;
+}
+.box3 .innerbox3{
+    width:1190px;
+    height:100%;
+    margin:0 auto;
+}
+.box3 .innerbox3 .topbox3{
+    width:100%;
+    height:36px;
+}
+.box3 .innerbox3 .topbox3 .topbox3-1{
+    float: left;
+    height:100%;
+    line-height:36px;
+}
+.box3 .innerbox3 .topbox3 .topbox3-1 span:nth-of-type(1){
+    font-size:24px;
+    font-weight: bold;
+    padding-right:12px;
+}
+.box3 .innerbox3 .topbox3 .topbox3-1 span:nth-of-type(2){
+    font-size:20px;
+}
+.box3 .innerbox3 .topbox3 .topbox3-2{
+    float: right;
 }
