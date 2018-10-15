@@ -63,4 +63,9 @@ oBanner1.onmouseleave = function(){
 }
 var autoPlayTimer = setInterval(oRight1.onclick, 4000);
 //box1右侧鼠标悬浮特效
-var c = document.documentElement
+var c = document.getElementsByClassName("pinpai");
+var d = document.getElementById("tu").children;
+var e = document.getElementById("more").children;
+c[i].onmouseover = function(){
+    c[i].idName = "active";
+}
