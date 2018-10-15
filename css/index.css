@@ -640,16 +640,28 @@ section .banner2 .innerbanner2 a{
 }
 .box1 .inner-box1 .rightbox1 .remen{
     padding-top:15px;
+    width:100%;
+    height:39px;
+    padding-left:350px;
 }
 .box1 .inner-box1 .rightbox1 .remen .pinpai{
     color:#000;
-    float: right;
+    float: left;
     padding-left:25px;
     line-height:24px;
     font-size:14px;
     cursor: pointer;
 }
-.box1 .inner-box1 .rightbox1 .remen span#active{
+.box1 .inner-box1 .rightbox1 .remen .active{
+    color:#000;
+    float: left;
+    padding-left:25px;
+    line-height:24px;
+    font-size:14px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.box1 .inner-box1 .rightbox1 .remen .pinpai:hover{
     font-weight: bold;
 }
 .box1 .inner-box1 .rightbox1 .innerrightbox1{
@@ -657,21 +669,35 @@ section .banner2 .innerbanner2 a{
     height:320px;
     position: absolute;
     left:0;
-    bottom: 0;
+    bottom:0;
 }
-.box1 .inner-box1 .rightbox1 .innerrightbox1 a{
+.box1 .inner-box1 .rightbox1 ul:nth-of-type(2){
+    opacity: 0;
+}
+.box1 .inner-box1 .rightbox1 .innerrightbox1 li{
     float: left;
     width:149px;
     height:79px;
     margin:0 1px 1px 0;
+    position: relative;
 }
-.box1 .inner-box1 .rightbox1 .innerrightbox1 p{
-    float: left;
-    width:150px;
-    height:80px;
+.box1 .inner-box1 .rightbox1 .innerrightbox1 li a{
+    position: absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+}
+.box1 .inner-box1 .rightbox1 .innerrightbox1 li .more{
+    position: absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
     background:rgba(0,0,0,0.5);
+    display: none;
 }
-.box1 .inner-box1 .rightbox1 .innerrightbox1 p span{
+.box1 .inner-box1 .rightbox1 .innerrightbox1 li .more span{
     display: block;
     width:100%;
     height:50px;
@@ -679,7 +705,7 @@ section .banner2 .innerbanner2 a{
     color:#fff;
     line-height:50px;
 }
-.box1 .inner-box1 .rightbox1 .innerrightbox1 p button{
+.box1 .inner-box1 .rightbox1 .innerrightbox1 .more button{
     width:84px;
     height:20px;
     font-size:12px;
@@ -688,5 +714,50 @@ section .banner2 .innerbanner2 a{
     color:#fff;
     background:red;
     border-radius: 10px;
-
+    cursor: pointer;
+}
+/* 顶部吸盘 */
+#xipan{
+    width:100%;
+    height:60px;
+    position: absolute;
+    left:0;
+    top:-60px;
+    box-shadow: 0 5px 5px #999;
+    transition: translate 1s;
+}
+#xipan .innerxipan{
+    width:1190px;
+    height:100%;
+    margin: 0 auto;
+}
+#xipan .innerxipan img{
+    float: left;
+    padding-right:80px;
+}
+#xipan .innerxipan p{
+    width:630px;
+    height:36px;
+    float: left;
+}
+#xipan .innerxipan p input:nth-of-type(1){
+    width:540px;
+    height:100%;
+    border:1px solid #dcdcdc;
+    padding-left:20px;
+    color:#969697;
+    float: left;
+}
+.title .centertitle input:nth-of-type(2){
+    width:90px;
+    height:100%;
+    background:#000;
+    color:#fff;
+    text-align: center;
+    float: left;
+}
+/* 第二块 */
+.box2{
+    width:100%;
+    height:
 }

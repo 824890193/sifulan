@@ -63,9 +63,32 @@ oBanner1.onmouseleave = function(){
 }
 var autoPlayTimer = setInterval(oRight1.onclick, 4000);
 //box1右侧鼠标悬浮特效
-var c = document.getElementsByClassName("pinpai");
-var d = document.getElementById("tu").children;
-var e = document.getElementById("more").children;
-c[i].onmouseover = function(){
-    c[i].idName = "active";
+$("#remen span").click(function(){
+    $(this).addClass("active")
+    .siblings().removeClass("active").addClass("pinpai");
+})
+$(".innerrightbox1 li").hover(function(){
+    $(this).find(".more").show();
+},function(){
+    $(this).find(".more").hide();
+})
+//box右侧大框切换
+var xiabiao = document.querySelectorAll("#remen span");
+var box = document.querySelectorAll(".rightbox1 ul");
+for(var q = 0 ; q < xiabiao.length ; q++){
+    xiabiao[q].index = q;
+    xiabiao[q].onclick = function(){
+        for(var w =0 ; w < box.length; w++){
+            box[w].style.opacity = 0;  
+        }
+        var index = this.index;
+        box[index].style.opacity = 1;
+    }
 }
+
+
+
+
+
+
+
