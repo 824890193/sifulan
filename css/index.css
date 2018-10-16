@@ -470,6 +470,10 @@ section .inner-section .inner-section1 .manu li .outerli{
 section .inner-section .inner-section1 .manu li .outerspan{
     color:#b6b7bd;
     padding-right:10px;
+    cursor: pointer;
+}
+section .inner-section .inner-section1 .manu li .outerspan:hover{
+    color:red;
 }
 section .inner-section .inner-section1 .manu li .manu1{
     display: none;
