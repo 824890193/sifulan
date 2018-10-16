@@ -112,6 +112,7 @@ header{
     position: relative;
     border:1px solid #ededed;
     z-index: 3;
+    background:#fff;
 }
 .inner-header .rightheader #bigul li:nth-child(1) ul img{
     position: absolute;
@@ -122,14 +123,14 @@ header{
 .inner-header .rightheader #bigul li:nth-child(1) ul li a{
     color:#000;
 }
-.inner-header .rightheader #bigul li:nth-child(1) ul li a:hover{
-    color:red;
-}
 .inner-header .rightheader #bigul li:nth-child(1):hover ul{
     display: block;
 }
 .inner-header .rightheader #bigul li:nth-child(1) ul:hover{
     background:#ededed;
+}
+.inner-header .rightheader #bigul li:nth-child(1) ul:hover li a{
+    color:red;
 }
 .inner-header .rightheader #bigul  .li1,.li2{
     display: flex;
@@ -825,7 +826,7 @@ section .banner2 .innerbanner2 a{
     left:136px;
     background:#fff;
     z-index: 10;
-    display: none;
+    /* display: none; */
 }
 #left-ul ul{
     width:40px;
@@ -947,7 +948,7 @@ section .banner2 .innerbanner2 a{
     width:100%;
     height:100%;
 }
-/* 第三块 */
+/* 第三块及以后 */
 .box3{
     width:100%;
     height:606px;
@@ -1078,27 +1079,7 @@ section .banner2 .innerbanner2 a{
     height:16px;
     background:#b1b1b1;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* 猜你喜欢 */
 .lastbox{
     width:100%;
     height:1076px;
@@ -1166,17 +1147,7 @@ section .banner2 .innerbanner2 a{
 .lastbox .innerlastbox .lastboxbottom div p a:hover{
     color:red;
 }
-
-
-
-
-
-
-
-
-
-
-
+/* footer */
 footer{
     width:100%;
     height:490px;
