@@ -37,6 +37,7 @@ body{min-width:1190px;overflow: auto;position: relative;}
     float: right;
     background:#fff;
     padding:0 30px;
+    position: relative;
 }
 .banner .innerbanner .login .head{
     width:100%;
@@ -48,17 +49,37 @@ body{min-width:1190px;overflow: auto;position: relative;}
     font-size: 16px;
     letter-spacing: 1px;
 }
+.banner .innerbanner .login .pass{
+    position: absolute;
+    left:10px;
+    top:50px;
+    display: none;
+}
+.banner .innerbanner .login .pass img{
+    float: left;
+    padding-right:5px;
+}
+.banner .innerbanner .login .pass span{
+    float: left;
+}
 .banner .innerbanner .login .user{
     width:100%;
     height:30px;
     border:1px solid #ccc;
+    position: relative;
 }
-.banner .innerbanner .login input:hover{
-    text-decoration: #000 underline;
+.banner .innerbanner .login .user:hover{
+    border-bottom:1px solid #000;
 }
-.banner .innerbanner .login .user img{
+.banner .innerbanner .login .user img:first-of-type{
     float: left;
     padding:0 5px;
+}
+.banner .innerbanner .login .user .spot,.spot2{
+    position: absolute;
+    right:10px;
+    top:6px;
+    display: none;
 }
 .banner .innerbanner .login .user input{
     float: left;
@@ -75,7 +96,7 @@ body{min-width:1190px;overflow: auto;position: relative;}
 }
 .banner .innerbanner .login .forget a{
     display: block;
-    height:100%;
+    width:60px;
     line-height:50px;
     color:#919191;
 }
@@ -83,17 +104,31 @@ body{min-width:1190px;overflow: auto;position: relative;}
     color:red;
 }
 .banner .innerbanner .login .btn{
-    width:100%;
+    width:300px;
     height:40px;
     line-height:40px;
     text-align: center;
     background:#999;
     color:#fff;
+    position: absolute;
+    left:30px;
+    top:216px;
+}
+.banner .innerbanner .login #btn1{
+    background:#000;
+    z-index: 3;
+    transition: all .5s;
+    display: none;
+    cursor: pointer;
+}
+.banner .innerbanner .login #btn1:hover{
+    background:red;
 }
 .banner .innerbanner .login .bottom{
     width:100%;
     height:50px;
     padding-top:12px;
+    margin-top:40px;
 }
 .banner .innerbanner .login .bottom .leftbottom{
     width:101px;
