@@ -59,9 +59,9 @@ oBanner1.onmouseenter = function(){
 }
 oBanner1.onmouseleave = function(){
     clearInterval(autoPlayTimer);
-    autoPlayTimer = setInterval(oRight1.onclick, 4000);
+    autoPlayTimer = setInterval(oRight1.onclick, 3000);
 }
-var autoPlayTimer = setInterval(oRight1.onclick, 4000);
+var autoPlayTimer = setInterval(oRight1.onclick, 3000);
 //box右侧大框切换
 var xiabiao = document.querySelectorAll("#remen span");
 var box = document.querySelectorAll(".rightbox1 ul");

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>sephora</title>
     <link href="css/index.css" rel="stylesheet"/>
     <script src="jquery.js"></script>
 </head>
@@ -14,8 +14,8 @@
         <div class="inner-header">
             <div class="leftheader">
                 <span>欢迎来到丝芙兰</span>
-                <span><a href="#">请登录</a></span>
-                <span><a href="#">免费注册</a></span>
+                <span><a href="login.html">请登录</a></span>
+                <span><a href="register.html">免费注册</a></span>
                 <span><a href="#">手机验证码登录</a></span>
             </div>
             <div id="centerheader">
@@ -72,10 +72,24 @@
                 </p>
             </div>
             <div class="righttitle">
-                <img src="images/shopping.jpg"/>
-                <span>购物袋</span>
-                <span>0</span>
-                <span>件</span>
+                <div class="innerrighttitle">
+                    <img class="shopping" src="images/shopping.jpg"/>
+                    <span class="bag">购物袋</span>
+                    <span class="bag">0</span>
+                    <span class="bag">件</span>
+                </div>               
+                <div class="contents">
+                    <div class="contents1">
+                        <div class="leftcontents1">
+                            <img src="images/shoppingbag.png" alt="">
+                        </div>
+                        <div class="rightcontents1">
+                            <p>购物车内暂时没有商品，登录后将显示您之前加入的商品</p>
+                            <button>登录</button>
+                        </div>                       
+                    </div>
+                    <div class="contents2"></div>
+                </div>
             </div>
         </div>        
     </div>
@@ -164,7 +178,8 @@
             </ul>
             <img src="images/right-search.png"/>
         </div>        
-    </div>   
+    </div> 
+    <!-- banner区 -->
     <section>
         <!-- 大二级菜单+大banner -->
         <div class="inner-section">
@@ -1184,7 +1199,7 @@
         <div class="innerxipan">
             <img src="images/left-title.png"/>
             <p>
-                <input type="text" placeholder="呵护秀发"/>
+                <input id="search_1" type="text" placeholder="请输入您要搜索的关键词"/>
                 <input type="submit" value="搜索"/>  
             </p> 
         </div>        
@@ -1197,41 +1212,31 @@
                 <li>
                     <div>
                         <a class="ul1-li1" href="#"><img src="images/1.png"/></a>
-                        <p class="li1-1">
-                            <a href="#">个人信息</a>
-                        </p>
+                        <p class="li1-1">个人信息</p>
                     </div>                    
                 </li>
                 <li>
                     <div>
                         <a class="ul1-li1" href="#"><img src="images/2.png"/></a>
-                        <p class="li1-1">
-                            <a href="#">购物车</a>
-                        </p>
+                        <p class="li1-1">购物车</p>
                     </div>      
                 </li>
                 <li>
                     <div>
                         <a class="ul1-li1" href="#"><img src="images/3.png"/></a>
-                        <p class="li1-1">
-                            <a href="#">联系客服</a>
-                        </p>
+                        <p class="li1-1">联系客服</p>
                     </div>
                 </li>
                 <li>
                     <div>
                         <a class="ul1-li1" href="#"><img src="images/4.png"/></a>
-                        <p class="li1-1">
-                            <a href="#">移动丝芙兰</a>
-                        </p>
+                        <p class="li1-1">移动丝芙兰</p>
                     </div>                    
                 </li>
                 <li>
                     <div>
                         <a class="ul1-li1" href="#"><img src="images/5.png"/></a>
-                        <p class="li1-1">
-                            <a href="#">回到顶部</a>
-                        </p>
+                        <p class="li1-1" id="zuihou">回到顶部</p>
                     </div>                   
                 </li>
             </ul>
@@ -1240,13 +1245,13 @@
     <!-- 左侧导航栏 -->
     <div id="left-ul">
         <ul id="left-ul1">
-            <li><a class="active" href="#">护肤品类</a></li>
-            <li><a href="#">彩妆品类</a></li>
-            <li><a href="#">香氛品类</a></li>
-            <li><a href="#">工具品类</a></li>
-            <li><a href="#">男士护肤</a></li>
-            <li><a href="#">洗浴护体</a></li>
-            <li><a href="#">洗发护发</a></li>
+            <li><a href="#box_1">护肤品类</a></li>
+            <li><a href="#box_2">彩妆品类</a></li>
+            <li><a href="#box_3">香氛品类</a></li>
+            <li><a href="#box_4">工具品类</a></li>
+            <li><a href="#box_5">男士护肤</a></li>
+            <li><a href="#box_6">洗浴护体</a></li>
+            <li><a href="#box_7">洗发护发</a></li>
         </ul>
     </div>
     <!-- 第二块 -->
@@ -1327,7 +1332,7 @@
         </div>
     </div>   
     <!-- 第三块 护肤品类 -->
-    <div class="box3">
+    <div class="box3" id="box_1">
         <div class="innerbox3">
             <div class="topbox3">
                 <p class="topbox3-1">
@@ -1456,7 +1461,7 @@
         </div>       
     </div>
     <!-- 第四块 彩妆品类 -->
-    <div class="box3">
+    <div class="box3" id="box_2">
         <div class="innerbox3">
             <div class="topbox3">
                 <p class="topbox3-1">
@@ -1583,7 +1588,7 @@
         </div>       
     </div>
     <!-- 第五块 香氛品类 -->
-    <div class="box3">
+    <div class="box3" id="box_3">
         <div class="innerbox3">
             <div class="topbox3">
                 <p class="topbox3-1">
@@ -1602,7 +1607,7 @@
             </div>
             <div class="middlebox3">
                 <div class="middlebox3-1">
-                    <a href="#"><img src="images/middlebox3-1.jpg"/></a>
+                    <a href="#"><img src="images/middlebox5-1.jpg"/></a>
                 </div>
                 <ul class="middlebox3-2" id="box3-ul">
                     <li>
@@ -1610,7 +1615,7 @@
                             <p>LANCOME</p>
                             <p>兰蔻粉水保湿狂欢礼盒</p>
                             <p>￥770.00</p>
-                            <img class="little1" src="images/middlebox3-2-1.jpg"/>
+                            <img class="little1" src="images/middlebox5-2-1.jpg"/>
                         </a>
                     </li>
                     <li>
@@ -1618,7 +1623,7 @@
                             <p>ESTEELAUDER</p>
                             <p>兰蔻粉水保湿狂欢礼盒</p>
                             <p>￥2120.00</p>
-                            <img class="little1" src="images/middlebox3-2-2.jpg"/>
+                            <img class="little1" src="images/middlebox5-2-2.jpg"/>
                         </a>
                     </li>
                     <li>
@@ -1626,7 +1631,7 @@
                             <p>GUERLAIN</p>
                             <p>兰蔻粉水保湿狂欢礼盒</p>
                             <p>￥600.00</p>
-                            <img class="little1" src="images/middlebox3-2-3.jpg"/>
+                            <img class="little1" src="images/middlebox5-2-3.jpg"/>
                         </a>
                     </li>
                     <li>
@@ -1634,7 +1639,7 @@
                             <p>LANCOME</p>
                             <p>兰蔻粉水保湿狂欢礼盒</p>
                             <p>￥349.00</p>
-                            <img class="little1" src="images/middlebox3-2-4.jpg"/>
+                            <img class="little1" src="images/middlebox5-2-4.jpg"/>
                         </a>
                     </li>
                     <li>
@@ -1642,7 +1647,7 @@
                             <p>LANCOME</p>
                             <p>兰蔻粉水保湿狂欢礼盒</p>
                             <p>￥680.00</p>
-                            <img class="little1" src="images/middlebox3-2-5.jpg"/>
+                            <img class="little1" src="images/middlebox5-2-5.jpg"/>
                         </a>
                     </li>
                     <li>
@@ -1650,7 +1655,7 @@
                             <p>LANCOME</p>
                             <p>兰蔻粉水保湿狂欢礼盒</p>
                             <p>￥188.00</p>
-                            <img class="little1" src="images/middlebox3-2-6.jpg"/>
+                            <img class="little1" src="images/middlebox5-2-6.jpg"/>
                         </a>
                     </li>
                     <li>
@@ -1658,7 +1663,7 @@
                             <p>LANCOME</p>
                             <p>兰蔻粉水保湿狂欢礼盒</p>
                             <p>￥520.00</p>
-                            <img class="little1" src="images/middlebox3-2-7.jpg"/>
+                            <img class="little1" src="images/middlebox5-2-7.jpg"/>
                         </a>
                     </li>
                     <li>
@@ -1666,7 +1671,7 @@
                             <p>LANCOME</p>
                             <p>兰蔻粉水保湿狂欢礼盒</p>
                             <p>￥500.00</p>
-                            <img class="little1" src="images/middlebox3-2-8.jpg"/>
+                            <img class="little1" src="images/middlebox5-2-8.jpg"/>
                         </a>
                     </li>
                 </ul>
@@ -1710,7 +1715,7 @@
         </div>       
     </div>
     <!-- 第六块 工具品类 -->
-    <div class="box3">
+    <div class="box3" id="box_4">
         <div class="innerbox3">
             <div class="topbox3">
                 <p class="topbox3-1">
@@ -1730,7 +1735,7 @@
             </div>
             <div class="middlebox3">
                 <div class="middlebox3-1">
-                    <a href="#"><img src="images/middlebox3-1.jpg"/></a>
+                    <a href="#"><img src="images/middlebox6-1.jpg"/></a>
                 </div>
                 <ul class="middlebox3-2" id="box3-ul">
                     <li>
@@ -1738,7 +1743,7 @@
                             <p>LANCOME</p>
                             <p>兰蔻粉水保湿狂欢礼盒</p>
                             <p>￥770.00</p>
-                            <img class="little1" src="images/middlebox3-2-1.jpg"/>
+                            <img class="little1" src="images/middlebox6-2-1.jpg"/>
                         </a>
                     </li>
                     <li>
@@ -1746,7 +1751,7 @@
                             <p>ESTEELAUDER</p>
                             <p>兰蔻粉水保湿狂欢礼盒</p>
                             <p>￥2120.00</p>
-                            <img class="little1" src="images/middlebox3-2-2.jpg"/>
+                            <img class="little1" src="images/middlebox6-2-2.jpg"/>
                         </a>
                     </li>
                     <li>
@@ -1754,7 +1759,7 @@
                             <p>GUERLAIN</p>
                             <p>兰蔻粉水保湿狂欢礼盒</p>
                             <p>￥600.00</p>
-                            <img class="little1" src="images/middlebox3-2-3.jpg"/>
+                            <img class="little1" src="images/middlebox6-2-3.jpg"/>
                         </a>
                     </li>
                     <li>
@@ -1762,7 +1767,7 @@
                             <p>LANCOME</p>
                             <p>兰蔻粉水保湿狂欢礼盒</p>
                             <p>￥349.00</p>
-                            <img class="little1" src="images/middlebox3-2-4.jpg"/>
+                            <img class="little1" src="images/middlebox6-2-4.jpg"/>
                         </a>
                     </li>
                     <li>
@@ -1770,7 +1775,7 @@
                             <p>LANCOME</p>
                             <p>兰蔻粉水保湿狂欢礼盒</p>
                             <p>￥680.00</p>
-                            <img class="little1" src="images/middlebox3-2-5.jpg"/>
+                            <img class="little1" src="images/middlebox6-2-5.jpg"/>
                         </a>
                     </li>
                     <li>
@@ -1778,7 +1783,7 @@
                             <p>LANCOME</p>
                             <p>兰蔻粉水保湿狂欢礼盒</p>
                             <p>￥188.00</p>
-                            <img class="little1" src="images/middlebox3-2-6.jpg"/>
+                            <img class="little1" src="images/middlebox6-2-6.jpg"/>
                         </a>
                     </li>
                     <li>
@@ -1786,7 +1791,7 @@
                             <p>LANCOME</p>
                             <p>兰蔻粉水保湿狂欢礼盒</p>
                             <p>￥520.00</p>
-                            <img class="little1" src="images/middlebox3-2-7.jpg"/>
+                            <img class="little1" src="images/middlebox6-2-7.jpg"/>
                         </a>
                     </li>
                     <li>
@@ -1794,7 +1799,7 @@
                             <p>LANCOME</p>
                             <p>兰蔻粉水保湿狂欢礼盒</p>
                             <p>￥500.00</p>
-                            <img class="little1" src="images/middlebox3-2-8.jpg"/>
+                            <img class="little1" src="images/middlebox6-2-8.jpg"/>
                         </a>
                     </li>
                 </ul>
@@ -1838,7 +1843,7 @@
         </div>       
     </div>
     <!-- 第七块 男士护肤品类 -->
-    <div class="box3">
+    <div class="box3" id="box_5">
         <div class="innerbox3">
             <div class="topbox3">
                 <p class="topbox3-1">
@@ -1858,7 +1863,7 @@
             </div>
             <div class="middlebox3">
                 <div class="middlebox3-1">
-                    <a href="#"><img src="images/middlebox3-1.jpg"/></a>
+                    <a href="#"><img src="images/middlebox7-1.jpg"/></a>
                 </div>
                 <ul class="middlebox3-2" id="box3-ul">
                     <li>
@@ -1866,7 +1871,7 @@
                             <p>LANCOME</p>
                             <p>兰蔻粉水保湿狂欢礼盒</p>
                             <p>￥770.00</p>
-                            <img class="little1" src="images/middlebox3-2-1.jpg"/>
+                            <img class="little1" src="images/middlebox7-2-1.jpg"/>
                         </a>
                     </li>
                     <li>
@@ -1874,7 +1879,7 @@
                             <p>ESTEELAUDER</p>
                             <p>兰蔻粉水保湿狂欢礼盒</p>
                             <p>￥2120.00</p>
-                            <img class="little1" src="images/middlebox3-2-2.jpg"/>
+                            <img class="little1" src="images/middlebox7-2-2.jpg"/>
                         </a>
                     </li>
                     <li>
@@ -1882,7 +1887,7 @@
                             <p>GUERLAIN</p>
                             <p>兰蔻粉水保湿狂欢礼盒</p>
                             <p>￥600.00</p>
-                            <img class="little1" src="images/middlebox3-2-3.jpg"/>
+                            <img class="little1" src="images/middlebox7-2-3.jpg"/>
                         </a>
                     </li>
                     <li>
@@ -1890,7 +1895,7 @@
                             <p>LANCOME</p>
                             <p>兰蔻粉水保湿狂欢礼盒</p>
                             <p>￥349.00</p>
-                            <img class="little1" src="images/middlebox3-2-4.jpg"/>
+                            <img class="little1" src="images/middlebox7-2-4.jpg"/>
                         </a>
                     </li>
                     <li>
@@ -1898,7 +1903,7 @@
                             <p>LANCOME</p>
                             <p>兰蔻粉水保湿狂欢礼盒</p>
                             <p>￥680.00</p>
-                            <img class="little1" src="images/middlebox3-2-5.jpg"/>
+                            <img class="little1" src="images/middlebox7-2-5.jpg"/>
                         </a>
                     </li>
                     <li>
@@ -1906,7 +1911,7 @@
                             <p>LANCOME</p>
                             <p>兰蔻粉水保湿狂欢礼盒</p>
                             <p>￥188.00</p>
-                            <img class="little1" src="images/middlebox3-2-6.jpg"/>
+                            <img class="little1" src="images/middlebox7-2-6.jpg"/>
                         </a>
                     </li>
                     <li>
@@ -1914,7 +1919,7 @@
                             <p>LANCOME</p>
                             <p>兰蔻粉水保湿狂欢礼盒</p>
                             <p>￥520.00</p>
-                            <img class="little1" src="images/middlebox3-2-7.jpg"/>
+                            <img class="little1" src="images/middlebox7-2-7.jpg"/>
                         </a>
                     </li>
                     <li>
@@ -1922,7 +1927,7 @@
                             <p>LANCOME</p>
                             <p>兰蔻粉水保湿狂欢礼盒</p>
                             <p>￥500.00</p>
-                            <img class="little1" src="images/middlebox3-2-8.jpg"/>
+                            <img class="little1" src="images/middlebox7-2-8.jpg"/>
                         </a>
                     </li>
                 </ul>
@@ -1966,7 +1971,7 @@
         </div>       
     </div>
     <!-- 第八块 洗浴护体品类 -->
-    <div class="box3">
+    <div class="box3" id="box_6">
         <div class="innerbox3">
             <div class="topbox3">
                 <p class="topbox3-1">
@@ -1985,7 +1990,7 @@
             </div>
             <div class="middlebox3">
                 <div class="middlebox3-1">
-                    <a href="#"><img src="images/middlebox3-1.jpg"/></a>
+                    <a href="#"><img src="images/middlebox8-1.jpg"/></a>
                 </div>
                 <ul class="middlebox3-2" id="box3-ul">
                     <li>
@@ -1993,7 +1998,7 @@
                             <p>LANCOME</p>
                             <p>兰蔻粉水保湿狂欢礼盒</p>
                             <p>￥770.00</p>
-                            <img class="little1" src="images/middlebox3-2-1.jpg"/>
+                            <img class="little1" src="images/middlebox8-2-1.jpg"/>
                         </a>
                     </li>
                     <li>
@@ -2001,7 +2006,7 @@
                             <p>ESTEELAUDER</p>
                             <p>兰蔻粉水保湿狂欢礼盒</p>
                             <p>￥2120.00</p>
-                            <img class="little1" src="images/middlebox3-2-2.jpg"/>
+                            <img class="little1" src="images/middlebox8-2-2.jpg"/>
                         </a>
                     </li>
                     <li>
@@ -2009,7 +2014,7 @@
                             <p>GUERLAIN</p>
                             <p>兰蔻粉水保湿狂欢礼盒</p>
                             <p>￥600.00</p>
-                            <img class="little1" src="images/middlebox3-2-3.jpg"/>
+                            <img class="little1" src="images/middlebox8-2-3.jpg"/>
                         </a>
                     </li>
                     <li>
@@ -2017,7 +2022,7 @@
                             <p>LANCOME</p>
                             <p>兰蔻粉水保湿狂欢礼盒</p>
                             <p>￥349.00</p>
-                            <img class="little1" src="images/middlebox3-2-4.jpg"/>
+                            <img class="little1" src="images/middlebox8-2-4.jpg"/>
                         </a>
                     </li>
                     <li>
@@ -2025,7 +2030,7 @@
                             <p>LANCOME</p>
                             <p>兰蔻粉水保湿狂欢礼盒</p>
                             <p>￥680.00</p>
-                            <img class="little1" src="images/middlebox3-2-5.jpg"/>
+                            <img class="little1" src="images/middlebox8-2-5.jpg"/>
                         </a>
                     </li>
                     <li>
@@ -2033,7 +2038,7 @@
                             <p>LANCOME</p>
                             <p>兰蔻粉水保湿狂欢礼盒</p>
                             <p>￥188.00</p>
-                            <img class="little1" src="images/middlebox3-2-6.jpg"/>
+                            <img class="little1" src="images/middlebox8-2-6.jpg"/>
                         </a>
                     </li>
                     <li>
@@ -2041,7 +2046,7 @@
                             <p>LANCOME</p>
                             <p>兰蔻粉水保湿狂欢礼盒</p>
                             <p>￥520.00</p>
-                            <img class="little1" src="images/middlebox3-2-7.jpg"/>
+                            <img class="little1" src="images/middlebox8-2-7.jpg"/>
                         </a>
                     </li>
                     <li>
@@ -2049,7 +2054,7 @@
                             <p>LANCOME</p>
                             <p>兰蔻粉水保湿狂欢礼盒</p>
                             <p>￥500.00</p>
-                            <img class="little1" src="images/middlebox3-2-8.jpg"/>
+                            <img class="little1" src="images/middlebox8-2-8.jpg"/>
                         </a>
                     </li>
                 </ul>
@@ -2093,7 +2098,7 @@
         </div>       
     </div>
     <!-- 第九块 美发护发品类 -->
-    <div class="box3">
+    <div class="box3" id="box_7">
         <div class="innerbox3">
             <div class="topbox3">
                 <p class="topbox3-1">
@@ -2113,7 +2118,7 @@
             </div>
             <div class="middlebox3">
                 <div class="middlebox3-1">
-                    <a href="#"><img src="images/middlebox3-1.jpg"/></a>
+                    <a href="#"><img src="images/middlebox9-1.jpg"/></a>
                 </div>
                 <ul class="middlebox3-2" id="box3-ul">
                     <li>
@@ -2121,7 +2126,7 @@
                             <p>LANCOME</p>
                             <p>兰蔻粉水保湿狂欢礼盒</p>
                             <p>￥770.00</p>
-                            <img class="little1" src="images/middlebox3-2-1.jpg"/>
+                            <img class="little1" src="images/middlebox3-2-8.jpg"/>
                         </a>
                     </li>
                     <li>
@@ -2129,7 +2134,7 @@
                             <p>ESTEELAUDER</p>
                             <p>兰蔻粉水保湿狂欢礼盒</p>
                             <p>￥2120.00</p>
-                            <img class="little1" src="images/middlebox3-2-2.jpg"/>
+                            <img class="little1" src="images/middlebox7-2-7.jpg"/>
                         </a>
                     </li>
                     <li>
@@ -2137,7 +2142,7 @@
                             <p>GUERLAIN</p>
                             <p>兰蔻粉水保湿狂欢礼盒</p>
                             <p>￥600.00</p>
-                            <img class="little1" src="images/middlebox3-2-3.jpg"/>
+                            <img class="little1" src="images/middlebox5-2-6.jpg"/>
                         </a>
                     </li>
                     <li>
@@ -2145,14 +2150,6 @@
                             <p>LANCOME</p>
                             <p>兰蔻粉水保湿狂欢礼盒</p>
                             <p>￥349.00</p>
-                            <img class="little1" src="images/middlebox3-2-4.jpg"/>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <p>LANCOME</p>
-                            <p>兰蔻粉水保湿狂欢礼盒</p>
-                            <p>￥680.00</p>
                             <img class="little1" src="images/middlebox3-2-5.jpg"/>
                         </a>
                     </li>
@@ -2160,8 +2157,16 @@
                         <a href="#">
                             <p>LANCOME</p>
                             <p>兰蔻粉水保湿狂欢礼盒</p>
+                            <p>￥680.00</p>
+                            <img class="little1" src="images/middlebox4-2-4.jpg"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p>LANCOME</p>
+                            <p>兰蔻粉水保湿狂欢礼盒</p>
                             <p>￥188.00</p>
-                            <img class="little1" src="images/middlebox3-2-6.jpg"/>
+                            <img class="little1" src="images/middlebox7-2-3.jpg"/>
                         </a>
                     </li>
                     <li>
@@ -2169,7 +2174,7 @@
                             <p>LANCOME</p>
                             <p>兰蔻粉水保湿狂欢礼盒</p>
                             <p>￥520.00</p>
-                            <img class="little1" src="images/middlebox3-2-7.jpg"/>
+                            <img class="little1" src="images/middlebox3-2-2.jpg"/>
                         </a>
                     </li>
                     <li>
@@ -2177,7 +2182,7 @@
                             <p>LANCOME</p>
                             <p>兰蔻粉水保湿狂欢礼盒</p>
                             <p>￥500.00</p>
-                            <img class="little1" src="images/middlebox3-2-8.jpg"/>
+                            <img class="little1" src="images/middlebox6-2-1.jpg"/>
                         </a>
                     </li>
                 </ul>
@@ -2436,14 +2441,18 @@
             </div>
         </div>       
     </footer>
+    <div id="wrap">
+            <ul>
+                
+            </ul>
+        </div>
     <script src="js/header.js"></script>
     <script src="js/banner.js"></script>
     <script src="js/box1.js"></script>
     <script src="js/top.js"></script>
-    <script src="js/left.js"></script>
-    <script src="js/right.js"></script>
+    <script src="js/aside.js"></script>
     <script src="js/box2.js"></script>
-    
+    <script src="js/ajax.js"></script>
     
 </body>
 </html>

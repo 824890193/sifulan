@@ -28,6 +28,9 @@ oUl.onmouseleave = function(){
     autoPlayTimer = setInterval(timer, 3000);
 }
 var autoPlayTimer = setInterval(timer, 3000);
+
+
+
 // 搜索框轮播条
 var content = document.getElementById("search");
 var letter = document.querySelectorAll("#innersearch a");
