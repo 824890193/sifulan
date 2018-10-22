@@ -1,0 +1,2485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>sephora</title>
+    <link href="css/index.css" rel="stylesheet"/>
+    <script src="script/jquery.js"></script>
+    <script src="script/jquery.cookie.js"></script>
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <div class="inner-header">
+            <div class="leftheader">
+                <span>欢迎来到丝芙兰</span>
+                <span><a href="login.html">请登录</a></span>
+                <span><a href="register.html">免费注册</a></span>
+                <span><a href="#">手机验证码登录</a></span>
+            </div>
+            <div id="centerheader">
+                <ul>
+                    <li><a href="#">丝芙兰正品承诺</a></li>
+                    <li><a href="#">常见问题</a></li>
+                    <li><a href="#">丝芙兰正品承诺</a></li>
+                </ul>               
+            </div>
+            <div class="rightheader">
+                <ul id="bigul">
+                   <li>
+                    <img src="images/header_1.jpg"/> 
+                    <span><a href="#">我的丝芙兰</a></span>
+                    <img src="images/header_4.jpg"/>
+                    <img src="images/header_4-1.jpg"/>
+                    <ul>
+                        <img src="images/header_5.jpg"/>
+                        <li>
+                            <a href="#">我的订单</a>
+                        </li>
+                    </ul>
+                   </li>
+                   <li class="li1">
+                       <img src="images/header_2.jpg"/>
+                       <span><a href="#">会员俱乐部</a></span>
+                   </li>
+                   <li class="li2">
+                        <img src="images/header_3.jpg"/>
+                        <span><a href="#">手机丝芙兰</a></span>
+                   </li>
+                   <li><a href="#">美力事业</a></li>
+                   <li><a href="#">帮助中心</a></li>
+                </ul>                
+            </div>
+        </div>
+    </header>
+    <!-- 搜索框 -->
+    <div class="title">
+        <div class="inner-title">
+            <img class="lefttitle" src="images/left-title.png"/>
+            <div class="centertitle">
+                <p>
+                    <input id="search" type="text" placeholder="请输入您要搜索的关键词"/>
+                    <input type="submit" value="搜索"/>  
+                </p>            
+                <p id="innersearch">
+                    <a href="#">热销美物榜</a>
+                    <a href="#">自然护肤养成</a>
+                    <a href="#">暖秋果汁唇</a>
+                    <a href="#">金秋精选礼盒</a>
+                    <a href="#">爱上色彩选择</a>
+                    <a href="#">丝芙兰漫威限量</a>
+                </p>
+            </div>
+            <div class="righttitle">
+                <div class="innerrighttitle">
+                    <button class="qingkong">清空</button>
+                    <img class="shopping" src="images/shopping.jpg"/>
+                    <span class="bag">购物袋</span>
+                    <span class="bags"></span>
+                    <span class="bag">件</span>
+                </div>               
+                <div class="contents">
+                    <!-- <div class="contents1">
+                        <div class="leftcontents1">
+                            <img src="images/shoppingbag.png" alt="">
+                        </div>
+                        <div class="rightcontents1">
+                            <p>购物车内暂时没有商品，登录后将显示您之前加入的商品</p>
+                            <button>登录</button>
+                        </div>                       
+                    </div> -->
+                    <div class="shopCar">
+                        <div class="empty">
+                            <ul class="goods-list">
+                                    <!-- <li >
+                                        <img src="http://localhost/1815phpnow/sifulan/images/lastbox1.jpg" alt="">
+                                        <h3>1</h3>
+                                        <strong>2</strong>
+                                    </li> -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </div>
+    <!-- 分类 -->
+    <div class="search">
+        <div class="inner-search">
+            <img src="images/left-search.jpg"/>            
+            <ul class="outul">
+                <li class="outli"><a href="#">畅销榜单</a></li>
+                <li class="outli"><a href="#">独家发售</a></li>
+                <li class="outli"><a href="#">礼物套装</a></li>
+                <li class="outli">
+                    <a href="#">全部品牌</a>
+                    <ul class="all">
+                        <ol>
+                            <img src="images/search.jpg"/>
+                            <li>
+                                <p>
+                                    <input type="text" placeholder="搜索"/>
+                                </p>                                
+                                <p>
+                                    <span>A</span>
+                                    <span>B</span>
+                                    <span>C</span>
+                                    <span>D</span>
+                                    <span>E</span>
+                                    <span>F</span>
+                                    <span>G</span>
+                                    <span>H</span>
+                                    <span>I</span>
+                                    <span>G</span>
+                                    <span>K</span>
+                                    <span>L</span>
+                                    <span>M</span>
+                                    <span>N</span>
+                                    <span>O</span>
+                                    <span>P</span>
+                                    <span>Q</span>
+                                    <span>R</span>
+                                    <span>S</span>
+                                    <span>T</span>
+                                    <span>U</span>
+                                    <span>V</span>
+                                    <span>W</span>
+                                    <span>X</span>
+                                    <span>Y</span>
+                                    <span>Z</span>
+                                    <span>0-9</span>
+                                </p>
+                                
+                            </li>
+                            <li class="secondli">
+                                <p id="pa">
+                                    <span>A</span>
+                                    <span>ACQUADIPARMA 帕尔玛之水</span>
+                                    <span>ALGENIST 奥杰尼</span>
+                                    <span>AMAZINGCOSMETICS 奥玛珍</span>
+                                    <span>ANNASUI 安娜苏</span>
+                                    <span>AtelierCologne 欧珑</span>
+                                </p>
+                                <p id="pb">
+                                    <span>B</span>
+                                    <span>BALENCIAGA 巴黎世家</span>
+                                    <span>beautyblender 美妆蛋</span>
+                                    <span>belloite 贝洛之舞</span>
+                                    <span>BENEFIT 贝玲妃</span>
+                                    <span>BIOTHERM 碧欧泉</span>
+                                    <span>BROBBIBROWN 芭比布朗</span>
+                                    <span>BROWGAL 眉宇</span>
+                                    <span>BURBERRY 巴宝莉</span>
+                                    <span>BVLGARI 宝格丽</span>
+                                </p>
+                                <P id="pc">
+                                    <span>C</span>
+                                    <span>CHLOE 蔻依</span>
+                                </P>
+                                <p id="pd">
+                                    <span>D</span>
+                                    <span>DIOR迪奥</span>
+                                </p>                            
+                            </li>
+                        </ol>                   
+                    </ul>
+                </li>
+                <li class="outli"><a href="#">预约中心</a></li>
+            </ul>
+            <img src="images/right-search.png"/>
+        </div>        
+    </div> 
+    <!-- banner区 -->
+    <section>
+        <!-- 大二级菜单+大banner -->
+        <div class="inner-section">
+            <!-- banner -->
+            <div class="inner-section1">
+                <div class="button clearfix" id="button">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="banner1" id="banner1">
+                    <a class="active" href="#"><img src="images/banner1.jpg"/></a>
+                    <a href="#"><img src="images/banner2.jpg"/></a>
+                    <a href="#"><img src="images/banner3.jpg"/></a>
+                    <a href="#"><img src="images/banner4.jpg"/></a>
+                    <a href="#"><img src="images/banner5.jpg"/></a>
+                </div>
+                <span id="leftbtn">&lt;</span>
+		        <span id="rightbtn">&gt;</span>
+                <img class="heart" src="images/heart.png" alt="">
+                <img class="halfheart" src="images/halfheart.png" alt="">
+                <!-- 大二级菜单 -->
+                <ul class="manu">
+                    <li>
+                        <p class="outerli">热门</p>
+                        <p>
+                            <span class="outerspan">魅惑美唇</span>
+                            <span class="outerspan">塑造立体轮廓</span>
+                            <span class="outerspan">热销气垫</span>
+                        </p>
+                        <div class="manu1">
+                            <div class="innermanu1">
+                                <h2>热门</h2>
+                                <div class="part clearfix">
+                                    <div class="part1">
+                                        <p>魅惑美唇</p>
+                                        <p>
+                                            <span>电光橘唇</span>
+                                            <span>聚光红唇</span>
+                                        </p>
+                                        <p>
+                                            <span>星光粉唇</span>
+                                            <span>暖光砖红唇</span>
+                                        </p>
+                                        <p>
+                                            <span>柔光豆沙唇</span>
+                                            <span>水光透唇</span>
+                                        </p>                                       
+                                    </div>
+                                    <div class="part1">
+                                        <p>精油护肤巧搭配</p>
+                                        <p>
+                                            <span>精油滋养</span>
+                                            <span>精油呵护</span>
+                                        </p>
+                                        <p>
+                                            <span>乳霜焕能</span>
+                                        </p>                                        
+                                    </div>
+                                    <div class="part1">
+                                        <p>精选面膜</p>
+                                        <p>
+                                            <span>润泽保湿</span>
+                                            <span>美白两幅</span>
+                                        </p>
+                                        <p>
+                                            <span>提拉紧致</span>
+                                            <span>深层清洁</span>
+                                        </p> 
+                                    </div>
+                                </div>
+                                <div class="part clearfix">     
+                                    <div class="part1">
+                                        <p>热销气垫</p>
+                                        <p><span>轻巧便携实力派</span></p>
+                                    </div>  
+                                    <div class="part1">
+                                        <p>塑造立体轮廓</p>
+                                        <p>
+                                            <span>人气腮红</span>
+                                            <span>明星高光</span>
+                                        </p>
+                                        <p>
+                                            <span>实力修容</span>
+                                        </p>
+                                        
+                                    </div>
+                                    <div class="part1">
+                                        <p>魅惑电眼</p>
+                                        <p>
+                                            <span>眼线笔</span>
+                                            <span>彩妆盘</span>
+                                        </p>
+                                        <p>
+                                            <span>眼线液</span>
+                                        </p> 
+                                    </div>
+                                </div>
+                                <p class="littlelogo">
+                                    <a href="#"><img src="images/li1.png"/></a>
+                                    <a href="#"><img src="images/li2.png"/></a>
+                                    <a href="#"><img src="images/li3.png"/></a>
+                                    <a href="#"><img src="images/li4.png"/></a>
+                                </p>
+                                <a class="right" href="#"><img src="images/liright.jpg"/></a>
+                            </div>                            
+                        </div>
+                    </li>
+                    <li>
+                        <p class="outerli">功效</p>
+                        <p>
+                            <span class="outerspan">保湿补水</span>
+                            <span class="outerspan">底妆修容</span>
+                            <span class="outerspan">美白</span>
+                        </p>
+                        <div class="manu1">
+                            <div class="innermanu1">
+                                <h2>功效</h2>
+                                <div class="part clearfix">
+                                    <div class="part1">
+                                        <p>保湿</p>
+                                        <p>
+                                            <span>舒缓</span>
+                                            <span>保湿补水</span>
+                                        </p>                                       
+                                    </div>
+                                    <div class="part1">
+                                        <p>底妆修容</p>
+                                        <p>
+                                            <span>提亮肤色</span>
+                                            <span>遮瑕</span>
+                                            <span>控油平衡</span>
+                                        </p>
+                                        <p>
+                                            <span>防晒修颜</span>
+                                        </p>                                        
+                                    </div>
+                                    <div class="part1">
+                                        <p>紧致</p>
+                                        <p>
+                                            <span>淡化细纹</span>
+                                            <span>提拉紧致</span>
+                                        </p>
+                                        <p>
+                                            <span>去眼部浮肿</span>
+                                        </p> 
+                                    </div>
+                                </div>
+                                <div class="part clearfix">     
+                                    <div class="part1">
+                                        <p>清洁</p>
+                                        <p>
+                                            <span>去角质</span>
+                                            <span>卸妆清洁</span>
+                                        </p>
+                                    </div>  
+                                    <div class="part1">
+                                        <p>抗老</p>
+                                        <p>
+                                            <span>抗污染</span>
+                                            <span>抗皱</span>
+                                            <span>抗氧化</span>
+                                        </p>    
+                                    </div>
+                                    <div class="part1">
+                                        <p>防晒</p>
+                                        <p>
+                                            <span>隔离防晒</span>
+                                            <span>晒后修护</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <p class="littlelogo">
+                                    <a href="#"><img src="images/li5.png"/></a>
+                                    <a href="#"><img src="images/li6.png"/></a>
+                                    <a href="#"><img src="images/li7.png"/></a>
+                                    <a href="#"><img src="images/li8.png"/></a>
+                                </p>
+                                <a class="right" href="#"><img src="images/liright2.jpg"/></a>
+                            </div>                            
+                        </div>
+                    </li>
+                    <li>
+                        <p class="outerli">热门</p>
+                        <p>
+                            <span class="outerspan">魅惑美唇</span>
+                            <span class="outerspan">塑造立体轮廓</span>
+                            <span class="outerspan">热销气垫</span>
+                        </p>
+                        <div class="manu1">
+                            <div class="innermanu1">
+                                <h2>热门</h2>
+                                <div class="part clearfix">
+                                    <div class="part1">
+                                        <p>魅惑美唇</p>
+                                        <p>
+                                            <span>电光橘唇</span>
+                                            <span>聚光红唇</span>
+                                        </p>
+                                        <p>
+                                            <span>星光粉唇</span>
+                                            <span>暖光砖红唇</span>
+                                        </p>
+                                        <p>
+                                            <span>柔光豆沙唇</span>
+                                            <span>水光透唇</span>
+                                        </p>                                       
+                                    </div>
+                                    <div class="part1">
+                                        <p>精油护肤巧搭配</p>
+                                        <p>
+                                            <span>精油滋养</span>
+                                            <span>精油呵护</span>
+                                        </p>
+                                        <p>
+                                            <span>乳霜焕能</span>
+                                        </p>                                        
+                                    </div>
+                                    <div class="part1">
+                                        <p>精选面膜</p>
+                                        <p>
+                                            <span>润泽保湿</span>
+                                            <span>美白两幅</span>
+                                        </p>
+                                        <p>
+                                            <span>提拉紧致</span>
+                                            <span>深层清洁</span>
+                                        </p> 
+                                    </div>
+                                </div>
+                                <div class="part clearfix">     
+                                    <div class="part1">
+                                        <p>热销气垫</p>
+                                        <p><span>轻巧便携实力派</span></p>
+                                    </div>  
+                                    <div class="part1">
+                                        <p>塑造立体轮廓</p>
+                                        <p>
+                                            <span>人气腮红</span>
+                                            <span>明星高光</span>
+                                        </p>
+                                        <p>
+                                            <span>实力修容</span>
+                                        </p>
+                                        
+                                    </div>
+                                    <div class="part1">
+                                        <p>魅惑电眼</p>
+                                        <p>
+                                            <span>眼线笔</span>
+                                            <span>彩妆盘</span>
+                                        </p>
+                                        <p>
+                                            <span>眼线液</span>
+                                        </p> 
+                                    </div>
+                                </div>
+                                <p class="littlelogo">
+                                    <a href="#"><img src="images/li1.png"/></a>
+                                    <a href="#"><img src="images/li2.png"/></a>
+                                    <a href="#"><img src="images/li3.png"/></a>
+                                    <a href="#"><img src="images/li4.png"/></a>
+                                </p>
+                                <a class="right" href="#"><img src="images/liright.jpg"/></a>
+                            </div>                            
+                        </div>
+                    </li>
+                    <li>
+                        <p class="outerli">功效</p>
+                        <p>
+                            <span class="outerspan">保湿补水</span>
+                            <span class="outerspan">底妆修容</span>
+                            <span class="outerspan">美白</span>
+                        </p>
+                        <div class="manu1">
+                            <div class="innermanu1">
+                                <h2>功效</h2>
+                                <div class="part clearfix">
+                                    <div class="part1">
+                                        <p>保湿</p>
+                                        <p>
+                                            <span>舒缓</span>
+                                            <span>保湿补水</span>
+                                        </p>                                       
+                                    </div>
+                                    <div class="part1">
+                                        <p>底妆修容</p>
+                                        <p>
+                                            <span>提亮肤色</span>
+                                            <span>遮瑕</span>
+                                            <span>控油平衡</span>
+                                        </p>
+                                        <p>
+                                            <span>防晒修颜</span>
+                                        </p>                                        
+                                    </div>
+                                    <div class="part1">
+                                        <p>紧致</p>
+                                        <p>
+                                            <span>淡化细纹</span>
+                                            <span>提拉紧致</span>
+                                        </p>
+                                        <p>
+                                            <span>去眼部浮肿</span>
+                                        </p> 
+                                    </div>
+                                </div>
+                                <div class="part clearfix">     
+                                    <div class="part1">
+                                        <p>清洁</p>
+                                        <p>
+                                            <span>去角质</span>
+                                            <span>卸妆清洁</span>
+                                        </p>
+                                    </div>  
+                                    <div class="part1">
+                                        <p>抗老</p>
+                                        <p>
+                                            <span>抗污染</span>
+                                            <span>抗皱</span>
+                                            <span>抗氧化</span>
+                                        </p>    
+                                    </div>
+                                    <div class="part1">
+                                        <p>防晒</p>
+                                        <p>
+                                            <span>隔离防晒</span>
+                                            <span>晒后修护</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <p class="littlelogo">
+                                    <a href="#"><img src="images/li5.png"/></a>
+                                    <a href="#"><img src="images/li6.png"/></a>
+                                    <a href="#"><img src="images/li7.png"/></a>
+                                    <a href="#"><img src="images/li8.png"/></a>
+                                </p>
+                                <a class="right" href="#"><img src="images/liright2.jpg"/></a>
+                            </div>                            
+                        </div>
+                    </li>
+                    <li>
+                        <p class="outerli">热门</p>
+                        <p>
+                            <span class="outerspan">魅惑美唇</span>
+                            <span class="outerspan">塑造立体轮廓</span>
+                            <span class="outerspan">热销气垫</span>
+                        </p>
+                        <div class="manu1">
+                            <div class="innermanu1">
+                                <h2>热门</h2>
+                                <div class="part clearfix">
+                                    <div class="part1">
+                                        <p>魅惑美唇</p>
+                                        <p>
+                                            <span>电光橘唇</span>
+                                            <span>聚光红唇</span>
+                                        </p>
+                                        <p>
+                                            <span>星光粉唇</span>
+                                            <span>暖光砖红唇</span>
+                                        </p>
+                                        <p>
+                                            <span>柔光豆沙唇</span>
+                                            <span>水光透唇</span>
+                                        </p>                                       
+                                    </div>
+                                    <div class="part1">
+                                        <p>精油护肤巧搭配</p>
+                                        <p>
+                                            <span>精油滋养</span>
+                                            <span>精油呵护</span>
+                                        </p>
+                                        <p>
+                                            <span>乳霜焕能</span>
+                                        </p>                                        
+                                    </div>
+                                    <div class="part1">
+                                        <p>精选面膜</p>
+                                        <p>
+                                            <span>润泽保湿</span>
+                                            <span>美白两幅</span>
+                                        </p>
+                                        <p>
+                                            <span>提拉紧致</span>
+                                            <span>深层清洁</span>
+                                        </p> 
+                                    </div>
+                                </div>
+                                <div class="part clearfix">     
+                                    <div class="part1">
+                                        <p>热销气垫</p>
+                                        <p><span>轻巧便携实力派</span></p>
+                                    </div>  
+                                    <div class="part1">
+                                        <p>塑造立体轮廓</p>
+                                        <p>
+                                            <span>人气腮红</span>
+                                            <span>明星高光</span>
+                                        </p>
+                                        <p>
+                                            <span>实力修容</span>
+                                        </p>
+                                        
+                                    </div>
+                                    <div class="part1">
+                                        <p>魅惑电眼</p>
+                                        <p>
+                                            <span>眼线笔</span>
+                                            <span>彩妆盘</span>
+                                        </p>
+                                        <p>
+                                            <span>眼线液</span>
+                                        </p> 
+                                    </div>
+                                </div>
+                                <p class="littlelogo">
+                                    <a href="#"><img src="images/li1.png"/></a>
+                                    <a href="#"><img src="images/li2.png"/></a>
+                                    <a href="#"><img src="images/li3.png"/></a>
+                                    <a href="#"><img src="images/li4.png"/></a>
+                                </p>
+                                <a class="right" href="#"><img src="images/liright.jpg"/></a>
+                            </div>                            
+                        </div>
+                    </li>
+                    <li>
+                        <p class="outerli">功效</p>
+                        <p>
+                            <span class="outerspan">保湿补水</span>
+                            <span class="outerspan">底妆修容</span>
+                            <span class="outerspan">美白</span>
+                        </p>
+                        <div class="manu1">
+                            <div class="innermanu1">
+                                <h2>功效</h2>
+                                <div class="part clearfix">
+                                    <div class="part1">
+                                        <p>保湿</p>
+                                        <p>
+                                            <span>舒缓</span>
+                                            <span>保湿补水</span>
+                                        </p>                                       
+                                    </div>
+                                    <div class="part1">
+                                        <p>底妆修容</p>
+                                        <p>
+                                            <span>提亮肤色</span>
+                                            <span>遮瑕</span>
+                                            <span>控油平衡</span>
+                                        </p>
+                                        <p>
+                                            <span>防晒修颜</span>
+                                        </p>                                        
+                                    </div>
+                                    <div class="part1">
+                                        <p>紧致</p>
+                                        <p>
+                                            <span>淡化细纹</span>
+                                            <span>提拉紧致</span>
+                                        </p>
+                                        <p>
+                                            <span>去眼部浮肿</span>
+                                        </p> 
+                                    </div>
+                                </div>
+                                <div class="part clearfix">     
+                                    <div class="part1">
+                                        <p>清洁</p>
+                                        <p>
+                                            <span>去角质</span>
+                                            <span>卸妆清洁</span>
+                                        </p>
+                                    </div>  
+                                    <div class="part1">
+                                        <p>抗老</p>
+                                        <p>
+                                            <span>抗污染</span>
+                                            <span>抗皱</span>
+                                            <span>抗氧化</span>
+                                        </p>    
+                                    </div>
+                                    <div class="part1">
+                                        <p>防晒</p>
+                                        <p>
+                                            <span>隔离防晒</span>
+                                            <span>晒后修护</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <p class="littlelogo">
+                                    <a href="#"><img src="images/li5.png"/></a>
+                                    <a href="#"><img src="images/li6.png"/></a>
+                                    <a href="#"><img src="images/li7.png"/></a>
+                                    <a href="#"><img src="images/li8.png"/></a>
+                                </p>
+                                <a class="right" href="#"><img src="images/liright2.jpg"/></a>
+                            </div>                            
+                        </div>
+                    </li>
+                    <li>
+                        <p class="outerli">热门</p>
+                        <p>
+                            <span class="outerspan">魅惑美唇</span>
+                            <span class="outerspan">塑造立体轮廓</span>
+                            <span class="outerspan">热销气垫</span>
+                        </p>
+                        <div class="manu1">
+                            <div class="innermanu1">
+                                <h2>热门</h2>
+                                <div class="part clearfix">
+                                    <div class="part1">
+                                        <p>魅惑美唇</p>
+                                        <p>
+                                            <span>电光橘唇</span>
+                                            <span>聚光红唇</span>
+                                        </p>
+                                        <p>
+                                            <span>星光粉唇</span>
+                                            <span>暖光砖红唇</span>
+                                        </p>
+                                        <p>
+                                            <span>柔光豆沙唇</span>
+                                            <span>水光透唇</span>
+                                        </p>                                       
+                                    </div>
+                                    <div class="part1">
+                                        <p>精油护肤巧搭配</p>
+                                        <p>
+                                            <span>精油滋养</span>
+                                            <span>精油呵护</span>
+                                        </p>
+                                        <p>
+                                            <span>乳霜焕能</span>
+                                        </p>                                        
+                                    </div>
+                                    <div class="part1">
+                                        <p>精选面膜</p>
+                                        <p>
+                                            <span>润泽保湿</span>
+                                            <span>美白两幅</span>
+                                        </p>
+                                        <p>
+                                            <span>提拉紧致</span>
+                                            <span>深层清洁</span>
+                                        </p> 
+                                    </div>
+                                </div>
+                                <div class="part clearfix">     
+                                    <div class="part1">
+                                        <p>热销气垫</p>
+                                        <p><span>轻巧便携实力派</span></p>
+                                    </div>  
+                                    <div class="part1">
+                                        <p>塑造立体轮廓</p>
+                                        <p>
+                                            <span>人气腮红</span>
+                                            <span>明星高光</span>
+                                        </p>
+                                        <p>
+                                            <span>实力修容</span>
+                                        </p>
+                                        
+                                    </div>
+                                    <div class="part1">
+                                        <p>魅惑电眼</p>
+                                        <p>
+                                            <span>眼线笔</span>
+                                            <span>彩妆盘</span>
+                                        </p>
+                                        <p>
+                                            <span>眼线液</span>
+                                        </p> 
+                                    </div>
+                                </div>
+                                <p class="littlelogo">
+                                    <a href="#"><img src="images/li1.png"/></a>
+                                    <a href="#"><img src="images/li2.png"/></a>
+                                    <a href="#"><img src="images/li3.png"/></a>
+                                    <a href="#"><img src="images/li4.png"/></a>
+                                </p>
+                                <a class="right" href="#"><img src="images/liright.jpg"/></a>
+                            </div>                            
+                        </div>
+                    </li>
+                    <li>
+                        <p class="outerli">功效</p>
+                        <p>
+                            <span class="outerspan">保湿补水</span>
+                            <span class="outerspan">底妆修容</span>
+                            <span class="outerspan">美白</span>
+                        </p>
+                        <div class="manu1">
+                            <div class="innermanu1">
+                                <h2>功效</h2>
+                                <div class="part clearfix">
+                                    <div class="part1">
+                                        <p>保湿</p>
+                                        <p>
+                                            <span>舒缓</span>
+                                            <span>保湿补水</span>
+                                        </p>                                       
+                                    </div>
+                                    <div class="part1">
+                                        <p>底妆修容</p>
+                                        <p>
+                                            <span>提亮肤色</span>
+                                            <span>遮瑕</span>
+                                            <span>控油平衡</span>
+                                        </p>
+                                        <p>
+                                            <span>防晒修颜</span>
+                                        </p>                                        
+                                    </div>
+                                    <div class="part1">
+                                        <p>紧致</p>
+                                        <p>
+                                            <span>淡化细纹</span>
+                                            <span>提拉紧致</span>
+                                        </p>
+                                        <p>
+                                            <span>去眼部浮肿</span>
+                                        </p> 
+                                    </div>
+                                </div>
+                                <div class="part clearfix">     
+                                    <div class="part1">
+                                        <p>清洁</p>
+                                        <p>
+                                            <span>去角质</span>
+                                            <span>卸妆清洁</span>
+                                        </p>
+                                    </div>  
+                                    <div class="part1">
+                                        <p>抗老</p>
+                                        <p>
+                                            <span>抗污染</span>
+                                            <span>抗皱</span>
+                                            <span>抗氧化</span>
+                                        </p>    
+                                    </div>
+                                    <div class="part1">
+                                        <p>防晒</p>
+                                        <p>
+                                            <span>隔离防晒</span>
+                                            <span>晒后修护</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <p class="littlelogo">
+                                    <a href="#"><img src="images/li5.png"/></a>
+                                    <a href="#"><img src="images/li6.png"/></a>
+                                    <a href="#"><img src="images/li7.png"/></a>
+                                    <a href="#"><img src="images/li8.png"/></a>
+                                </p>
+                                <a class="right" href="#"><img src="images/liright2.jpg"/></a>
+                            </div>                            
+                        </div>
+                    </li>
+                    <li>
+                        <p class="outerli">热门</p>
+                        <p>
+                            <span class="outerspan">魅惑美唇</span>
+                            <span class="outerspan">塑造立体轮廓</span>
+                            <span class="outerspan">热销气垫</span>
+                        </p>
+                        <div class="manu1">
+                            <div class="innermanu1">
+                                <h2>热门</h2>
+                                <div class="part clearfix">
+                                    <div class="part1">
+                                        <p>魅惑美唇</p>
+                                        <p>
+                                            <span>电光橘唇</span>
+                                            <span>聚光红唇</span>
+                                        </p>
+                                        <p>
+                                            <span>星光粉唇</span>
+                                            <span>暖光砖红唇</span>
+                                        </p>
+                                        <p>
+                                            <span>柔光豆沙唇</span>
+                                            <span>水光透唇</span>
+                                        </p>                                       
+                                    </div>
+                                    <div class="part1">
+                                        <p>精油护肤巧搭配</p>
+                                        <p>
+                                            <span>精油滋养</span>
+                                            <span>精油呵护</span>
+                                        </p>
+                                        <p>
+                                            <span>乳霜焕能</span>
+                                        </p>                                        
+                                    </div>
+                                    <div class="part1">
+                                        <p>精选面膜</p>
+                                        <p>
+                                            <span>润泽保湿</span>
+                                            <span>美白两幅</span>
+                                        </p>
+                                        <p>
+                                            <span>提拉紧致</span>
+                                            <span>深层清洁</span>
+                                        </p> 
+                                    </div>
+                                </div>
+                                <div class="part clearfix">     
+                                    <div class="part1">
+                                        <p>热销气垫</p>
+                                        <p><span>轻巧便携实力派</span></p>
+                                    </div>  
+                                    <div class="part1">
+                                        <p>塑造立体轮廓</p>
+                                        <p>
+                                            <span>人气腮红</span>
+                                            <span>明星高光</span>
+                                        </p>
+                                        <p>
+                                            <span>实力修容</span>
+                                        </p>
+                                        
+                                    </div>
+                                    <div class="part1">
+                                        <p>魅惑电眼</p>
+                                        <p>
+                                            <span>眼线笔</span>
+                                            <span>彩妆盘</span>
+                                        </p>
+                                        <p>
+                                            <span>眼线液</span>
+                                        </p> 
+                                    </div>
+                                </div>
+                                <p class="littlelogo">
+                                    <a href="#"><img src="images/li1.png"/></a>
+                                    <a href="#"><img src="images/li2.png"/></a>
+                                    <a href="#"><img src="images/li3.png"/></a>
+                                    <a href="#"><img src="images/li4.png"/></a>
+                                </p>
+                                <a class="right" href="#"><img src="images/liright.jpg"/></a>
+                            </div>                            
+                        </div>
+                    </li>
+                </ul>
+            </div>                        
+        </div> 
+        <!-- bannerbottom -->
+        <div class="banner2 clearfix">
+          <div class="innerbanner2">
+            <a href="#"><img src="images/banner_bottom1.jpg" alt=""></a>
+            <a href="#"><img src="images/banner_bottom2.jpg" alt=""></a>
+            <a href="#"><img src="images/banner_bottom3.jpg" alt=""></a>
+          </div>  
+        </div>       
+    </section>
+    <!-- 第一块 -->
+    <div class="box1">
+        <div class="inner-box1">
+            <div class="leftbox1">
+                <span>全部品牌</span>
+                <span>ALL BRANDS</span>
+                <div class="banner3" id="banner3">
+                    <div class="button1 clearfix" id="button1">
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="pics" id="pics">
+                        <a class="active" href="#"><img src="images/box1-1.jpg"/></a>
+                        <a href="#"><img src="images/box1-2.jpg"/></a>
+                    </div>
+                    <span id="leftbtn1">&lt;</span>
+                    <span id="rightbtn1">&gt;</span>
+                </div>
+            </div>
+            <div class="rightbox1">
+                <div class="remen" id="remen">
+                        <span class="active">热门品牌</span>
+                    <span class="pinpai">独家品牌</span>                    
+                    <a href="#" class="pinpai">全部品牌</a>
+                </div>               
+                <ul class="innerrightbox1">
+                    <li>
+                        <a href="#"><img src="images/logo1.png"/></a>
+                        <p class="more">
+                            <span>丝芙兰</span>
+                            <button>点击查看</button>
+                        </p>
+                    </li>                    
+                    <li>
+                        <a href="#"><img src="images/logo2.png"/></a>
+                        <p class="more">
+                            <span>丝芙兰</span>
+                            <button>点击查看</button>
+                        </p>
+                    </li>                    
+                    <li>
+                        <a href="#"><img src="images/logo3.png"/></a>
+                        <p class="more">
+                            <span>丝芙兰</span>
+                            <button>点击查看</button>
+                        </p>
+                    </li>                    
+                    <li>
+                        <a href="#"><img src="images/logo4.png"/></a>
+                        <p class="more">
+                            <span>丝芙兰</span>
+                            <button>点击查看</button>
+                        </p>
+                    </li>                    
+                    <li>
+                        <a href="#"><img src="images/logo5.png"/></a>
+                        <p class="more">
+                            <span>丝芙兰</span>
+                            <button>点击查看</button>
+                        </p>
+                    </li>                    
+                    <li>
+                        <a href="#"><img src="images/logo6.png"/></a>
+                        <p class="more">
+                            <span>丝芙兰</span>
+                            <button>点击查看</button>
+                        </p>
+                    </li>                    
+                    <li>
+                        <a href="#"><img src="images/logo7.png"/></a>
+                        <p class="more">
+                            <span>丝芙兰</span>
+                            <button>点击查看</button>
+                        </p>
+                    </li>                    
+                    <li>
+                        <a href="#"><img src="images/logo8.png"/></a>
+                        <p class="more">
+                            <span>丝芙兰</span>
+                            <button>点击查看</button>
+                        </p>
+                    </li>                    
+                    <li>
+                        <a href="#"><img src="images/logo9.png"/></a>
+                        <p class="more">
+                            <span>丝芙兰</span>
+                            <button>点击查看</button>
+                        </p>
+                    </li>                    
+                    <li>
+                        <a href="#"><img src="images/logo10.png"/></a>
+                        <p class="more">
+                            <span>丝芙兰</span>
+                            <button>点击查看</button>
+                        </p>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/logo11.png"/></a>
+                        <p class="more">
+                            <span>丝芙兰</span>
+                            <button>点击查看</button>
+                        </p>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/logo12.png"/></a>
+                        <p class="more">
+                            <span>丝芙兰</span>
+                            <button>点击查看</button>
+                        </p>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/logo13.png"/></a>
+                        <p class="more">
+                            <span>丝芙兰</span>
+                            <button>点击查看</button>
+                        </p>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/logo14.png"/></a>
+                        <p class="more">
+                            <span>丝芙兰</span>
+                            <button>点击查看</button>
+                        </p>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/logo15.png"/></a>
+                        <p class="more">
+                            <span>丝芙兰</span>
+                            <button>点击查看</button>
+                        </p>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/logo16.png"/></a>
+                        <p class="more">
+                            <span>丝芙兰</span>
+                            <button>点击查看</button>
+                        </p>
+                    </li>
+                </ul>
+                <ul class="innerrightbox1">
+                    <li>
+                        <a href="#"><img src="images/logo5.png"/></a>
+                        <p class="more">
+                            <span>丝芙兰</span>
+                            <button>点击查看</button>
+                        </p>
+                    </li>                    
+                    <li>
+                        <a href="#"><img src="images/logo4.png"/></a>
+                        <p class="more">
+                            <span>丝芙兰</span>
+                            <button>点击查看</button>
+                        </p>
+                    </li>                    
+                    <li>
+                        <a href="#"><img src="images/logo3.png"/></a>
+                        <p class="more">
+                            <span>丝芙兰</span>
+                            <button>点击查看</button>
+                        </p>
+                    </li>                    
+                    <li>
+                        <a href="#"><img src="images/logo2.png"/></a>
+                        <p class="more">
+                            <span>丝芙兰</span>
+                            <button>点击查看</button>
+                        </p>
+                    </li>                    
+                    <li>
+                        <a href="#"><img src="images/logo1.png"/></a>
+                        <p class="more">
+                            <span>丝芙兰</span>
+                            <button>点击查看</button>
+                        </p>
+                    </li>                    
+                    <li>
+                        <a href="#"><img src="images/logo8.png"/></a>
+                        <p class="more">
+                            <span>丝芙兰</span>
+                            <button>点击查看</button>
+                        </p>
+                    </li>                    
+                    <li>
+                        <a href="#"><img src="images/logo8.png"/></a>
+                        <p class="more">
+                            <span>丝芙兰</span>
+                            <button>点击查看</button>
+                        </p>
+                    </li>                    
+                    <li>
+                        <a href="#"><img src="images/logo7.png"/></a>
+                        <p class="more">
+                            <span>丝芙兰</span>
+                            <button>点击查看</button>
+                        </p>
+                    </li>                    
+                    <li>
+                        <a href="#"><img src="images/logo6.png"/></a>
+                        <p class="more">
+                            <span>丝芙兰</span>
+                            <button>点击查看</button>
+                        </p>
+                    </li>                    
+                    <li>
+                        <a href="#"><img src="images/logo15.png"/></a>
+                        <p class="more">
+                            <span>丝芙兰</span>
+                            <button>点击查看</button>
+                        </p>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/logo11.png"/></a>
+                        <p class="more">
+                            <span>丝芙兰</span>
+                            <button>点击查看</button>
+                        </p>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/logo12.png"/></a>
+                        <p class="more">
+                            <span>丝芙兰</span>
+                            <button>点击查看</button>
+                        </p>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/logo13.png"/></a>
+                        <p class="more">
+                            <span>丝芙兰</span>
+                            <button>点击查看</button>
+                        </p>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/logo14.png"/></a>
+                        <p class="more">
+                            <span>丝芙兰</span>
+                            <button>点击查看</button>
+                        </p>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/logo10.png"/></a>
+                        <p class="more">
+                            <span>丝芙兰</span>
+                            <button>点击查看</button>
+                        </p>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/logo16.png"/></a>
+                        <p class="more">
+                            <span>丝芙兰</span>
+                            <button>点击查看</button>
+                        </p>
+                    </li>
+                </ul>                
+            </div>
+        </div>
+    </div>
+    <!-- 顶部吸盘 -->
+    <div id="xipan">
+        <div class="innerxipan">
+            <img class="tupian" src="images/left-title.png"/>
+            <p class="innerxipan1">
+                <input id="search_1" type="text" placeholder="请输入您要搜索的关键词"/>
+                <input type="submit" value="搜索"/>  
+            </p> 
+            <!-- <div class="innerxipan2">
+                <div class="innerrightxipan">
+                    <img class="bagbox" src="images/shopping.jpg"/>
+                    <span class="spanshopping">购物袋</span>
+                    <span class="bags"></span>
+                    <span class="spanshopping">件</span>
+                    <div class="shopCar">
+                        <div class="empty">
+                            <ul class="goods-list"></ul>
+                        </div>
+                    </div>
+                </div>  
+            </div>                   -->
+        </div>        
+    </div>
+    <!-- 右侧导航栏 -->
+    <div id="right-ul">
+        <ul id="right-ul1">
+            <img class="bgul" src="images/rightul.jpg"/>
+            <ul class="right-ul1-1">
+                <li>
+                    <div>
+                        <a class="ul1-li1" href="#"><img src="images/1.png"/></a>
+                        <p class="li1-1">个人信息</p>
+                    </div>                    
+                </li>
+                <li>
+                    <div>
+                        <a class="ul1-li1" href="#"><img src="images/2.png"/></a>
+                        <p id="shoppingcar" class="li1-1">购物车</p>
+                    </div>      
+                </li>
+                <li>
+                    <div>
+                        <a class="ul1-li1" href="#"><img src="images/3.png"/></a>
+                        <p class="li1-1">联系客服</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <a class="ul1-li1" href="#"><img src="images/4.png"/></a>
+                        <p class="li1-1">移动丝芙兰</p>
+                    </div>                    
+                </li>
+                <li>
+                    <div>
+                        <a class="ul1-li1" href="#"><img src="images/5.png"/></a>
+                        <p class="li1-1" id="zuihou">回到顶部</p>
+                    </div>                   
+                </li>
+            </ul>
+        </ul>
+    </div>
+    <!-- 左侧导航栏 -->
+    <div id="left-ul">
+        <ul id="left-ul1">
+            <li><a href="#box_1">护肤品类</a></li>
+            <li><a href="#box_2">彩妆品类</a></li>
+            <li><a href="#box_3">香氛品类</a></li>
+            <li><a href="#box_4">工具品类</a></li>
+            <li><a href="#box_5">男士护肤</a></li>
+            <li><a href="#box_6">洗浴护体</a></li>
+            <li><a href="#box_7">洗发护发</a></li>
+        </ul>
+    </div>
+    <!-- 第二块 -->
+    <div class="box2">
+        <div class="innerbox2">
+            <p class="topbox2">
+                <span>精品推荐</span>
+                <span>SOPHORA PICKS!</span>  
+            </p>
+            <div class="bottombox2">
+                <div class="bottombox2-1">
+                    <a class="bg" href="#"><img src="images/box2-1.jpg"/></a>
+                    <ul class="box2-ul">
+                        <li>
+                            <a href="#">
+                                <p>CAUDALIE</p>
+                                <p>欧缇丽舒缓美肌水凝霜</p>
+                                <p>￥260.00</p>
+                                <img class="little" src="images/box2-1-1.jpg"/>
+                            </a>                            
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p>CLARINS</p>
+                                <p>娇韵诗浸润亲肌保湿乳霜</p>
+                                <p>￥470.00</p>
+                                <img class="little" src="images/box2-1-2.jpg"/>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bottombox2-1">
+                    <a class="bg" href="#"><img src="images/box2-2.jpg"/></a>
+                    <ul class="box2-ul">
+                        <li>
+                            <a href="#">
+                                <p>CAUDALIE</p>
+                                <p>欧缇丽舒缓美肌水凝霜</p>
+                                <p>￥260.00</p>
+                                <img class="little" src="images/box2-2-1.jpg"/>
+                            </a>                            
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p>CLARINS</p>
+                                <p>娇韵诗浸润亲肌保湿乳霜</p>
+                                <p>￥470.00</p>
+                                <img class="little" src="images/box2-2-2.jpg"/>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bottombox2-1">
+                    <a class="bg" href="#"><img src="images/box2-3.jpg"/></a>
+                    <ul class="box2-ul">
+                        <li>
+                            <a href="#">
+                                <p>CAUDALIE</p>
+                                <p>欧缇丽舒缓美肌水凝霜</p>
+                                <p>￥260.00</p>
+                                <img class="little" src="images/box2-3-1.jpg"/>
+                            </a>                            
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p>CLARINS</p>
+                                <p>娇韵诗浸润亲肌保湿乳霜</p>
+                                <p>￥470.00</p>
+                                <img class="little" src="images/box2-3-2.jpg"/>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bottombox2-1">
+                    <a class="box2-gif" href="#"><img src="images/box2-4.gif" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </div>   
+    <!-- 第三块 护肤品类 -->
+    <div class="box3" id="box_1">
+        <div class="innerbox3">
+            <div class="topbox3">
+                <p class="topbox3-1">
+                    <span>护肤品类</span>
+                    <span>SKINCARE</span>  
+                </p> 
+                <ul class="topbox3-2">
+                    <li><a href="#">惠选套装</a></li>
+                    <li><a href="#">面部精华</a></li>
+                    <li><a href="#">美容仪</a></li>
+                    <li><a href="#">面膜</a></li>
+                    <li><a href="#">眼部护理</a></li>
+                    <li><a href="#">清洁</a></li>
+                    <li><a href="#">卸妆</a></li>
+                    <li><a href="#">唇部</a></li>
+                    <li><a href="#">全部</a></li>
+                </ul> 
+            </div>
+            <div class="middlebox3">
+                <div class="middlebox3-1">
+                    <a href="#"><img src="images/middlebox3-1.jpg"/></a>
+                </div>
+                <ul class="middlebox3-2" id="box3-ul">
+                    <li>
+                        <a href="#">
+                            <p>LANCOME</p>
+                            <p>兰蔻粉水保湿狂欢礼盒</p>
+                            <p>￥770.00</p>
+                            <img class="little1" src="images/middlebox3-2-1.jpg"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p>ESTEELAUDER</p>
+                            <p>兰蔻粉水保湿狂欢礼盒</p>
+                            <p>￥2120.00</p>
+                            <img class="little1" src="images/middlebox3-2-2.jpg"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p>GUERLAIN</p>
+                            <p>兰蔻粉水保湿狂欢礼盒</p>
+                            <p>￥600.00</p>
+                            <img class="little1" src="images/middlebox3-2-3.jpg"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p>LANCOME</p>
+                            <p>兰蔻粉水保湿狂欢礼盒</p>
+                            <p>￥349.00</p>
+                            <img class="little1" src="images/middlebox3-2-4.jpg"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p>LANCOME</p>
+                            <p>兰蔻粉水保湿狂欢礼盒</p>
+                            <p>￥680.00</p>
+                            <img class="little1" src="images/middlebox3-2-5.jpg"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p>LANCOME</p>
+                            <p>兰蔻粉水保湿狂欢礼盒</p>
+                            <p>￥188.00</p>
+                            <img class="little1" src="images/middlebox3-2-6.jpg"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p>LANCOME</p>
+                            <p>兰蔻粉水保湿狂欢礼盒</p>
+                            <p>￥520.00</p>
+                            <img class="little1" src="images/middlebox3-2-7.jpg"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p>LANCOME</p>
+                            <p>兰蔻粉水保湿狂欢礼盒</p>
+                            <p>￥500.00</p>
+                            <img class="little1" src="images/middlebox3-2-8.jpg"/>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="bottombox3">
+                <ul class="bottombox3-1">
+                    <li>
+                        <a href="#"><img src="images/bottombox3-1.png" alt=""></a>
+                        <em></em>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/bottombox3-2.png" alt=""></a>
+                        <em></em>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/bottombox3-3.png" alt=""></a>
+                        <em></em>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/bottombox3-4.png" alt=""></a>
+                        <em></em>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/bottombox3-5.png" alt=""></a>
+                        <em></em>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/bottombox3-6.png" alt=""></a>
+                        <em></em>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/bottombox3-7.png" alt=""></a>
+                        <em></em>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/bottombox3-8.png" alt=""></a>
+                        <em></em>
+                    </li>
+                </ul>
+            </div>
+        </div>       
+    </div>
+    <!-- 第四块 彩妆品类 -->
+    <div class="box3" id="box_2">
+        <div class="innerbox3">
+            <div class="topbox3">
+                <p class="topbox3-1">
+                    <span>彩妆品类</span>
+                    <span>MAKE UP</span>  
+                </p> 
+                <ul class="topbox3-2">
+                    <li><a href="#">丝芙兰染唇膏</a></li>
+                    <li><a href="#">MAC子弹头</a></li>
+                    <li><a href="#">兰蔻'磨皮'粉底</a></li>
+                    <li><a href="#">漫威英雄系列</a></li>
+                    <li><a href="#">干玫瑰系列</a></li>
+                    <li><a href="#">热门眉部产品</a></li>
+                    <li><a href="#">全部</a></li>
+                </ul> 
+            </div>
+            <div class="middlebox3">
+                <div class="middlebox3-1">
+                    <a href="#"><img src="images/middlebox4-1.jpg"/></a>
+                </div>
+                <ul class="middlebox3-2" id="box3-ul">
+                    <li>
+                        <a href="#">
+                            <p>LANCOME</p>
+                            <p>兰蔻菁纯雾面丝绒唇膏</p>
+                            <p>￥270.00</p>
+                            <img class="little1" src="images/middlebox4-2-1.jpg"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p>BENEFIT</p>
+                            <p>兰蔻菁纯雾面丝绒唇膏</p>
+                            <p>￥2120.00</p>
+                            <img class="little1" src="images/middlebox4-2-2.jpg"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p>GUERLAIN</p>
+                            <p>兰蔻粉水保湿狂欢礼盒</p>
+                            <p>￥600.00</p>
+                            <img class="little1" src="images/middlebox4-2-3.jpg"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p>M.A.C</p>
+                            <p>兰蔻粉水保湿狂欢礼盒</p>
+                            <p>￥349.00</p>
+                            <img class="little1" src="images/middlebox4-2-4.jpg"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p>LANCOME</p>
+                            <p>兰蔻粉水保湿狂欢礼盒</p>
+                            <p>￥680.00</p>
+                            <img class="little1" src="images/middlebox4-2-5.jpg"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p>LANCOME</p>
+                            <p>兰蔻粉水保湿狂欢礼盒</p>
+                            <p>￥188.00</p>
+                            <img class="little1" src="images/middlebox4-2-6.jpg"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p>LANCOME</p>
+                            <p>兰蔻粉水保湿狂欢礼盒</p>
+                            <p>￥520.00</p>
+                            <img class="little1" src="images/middlebox4-2-8.jpg"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p>LANCOME</p>
+                            <p>兰蔻粉水保湿狂欢礼盒</p>
+                            <p>￥500.00</p>
+                            <img class="little1" src="images/middlebox4-2-7.jpg"/>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="bottombox3">
+                <ul class="bottombox3-1">
+                    <li>
+                        <a href="#"><img src="images/bottombox4-1.png" alt=""></a>
+                        <em></em>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/bottombox4-2.png" alt=""></a>
+                        <em></em>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/bottombox4-3.png" alt=""></a>
+                        <em></em>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/bottombox4-4.png" alt=""></a>
+                        <em></em>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/bottombox4-5.png" alt=""></a>
+                        <em></em>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/bottombox4-6.png" alt=""></a>
+                        <em></em>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/bottombox4-7.png" alt=""></a>
+                        <em></em>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/bottombox4-8.png" alt=""></a>
+                        <em></em>
+                    </li>
+                </ul>
+            </div>
+        </div>       
+    </div>
+    <!-- 第五块 香氛品类 -->
+    <div class="box3" id="box_3">
+        <div class="innerbox3">
+            <div class="topbox3">
+                <p class="topbox3-1">
+                    <span>香氛品类</span>
+                    <span>FRAGRANCE</span>  
+                </p> 
+                <ul class="topbox3-2">
+                    <li><a href="#">圣罗兰黑色奥飘茗</a></li>
+                    <li><a href="#">宝格丽罗马之夜</a></li>
+                    <li><a href="#">帕尔玛克罗尼亚纯粹古龙</a></li>
+                    <li><a href="#">兰蔻奇迹唯爱礼盒</a></li>
+                    <li><a href="#">缪缪节日礼盒</a></li>
+                    <li><a href="#">新品女香大赏</a></li>
+                    <li><a href="#">全部</a></li>
+                </ul> 
+            </div>
+            <div class="middlebox3">
+                <div class="middlebox3-1">
+                    <a href="#"><img src="images/middlebox5-1.jpg"/></a>
+                </div>
+                <ul class="middlebox3-2" id="box3-ul">
+                    <li>
+                        <a href="#">
+                            <p>LANCOME</p>
+                            <p>兰蔻粉水保湿狂欢礼盒</p>
+                            <p>￥770.00</p>
+                            <img class="little1" src="images/middlebox5-2-1.jpg"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p>ESTEELAUDER</p>
+                            <p>兰蔻粉水保湿狂欢礼盒</p>
+                            <p>￥2120.00</p>
+                            <img class="little1" src="images/middlebox5-2-2.jpg"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p>GUERLAIN</p>
+                            <p>兰蔻粉水保湿狂欢礼盒</p>
+                            <p>￥600.00</p>
+                            <img class="little1" src="images/middlebox5-2-3.jpg"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p>LANCOME</p>
+                            <p>兰蔻粉水保湿狂欢礼盒</p>
+                            <p>￥349.00</p>
+                            <img class="little1" src="images/middlebox5-2-4.jpg"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p>LANCOME</p>
+                            <p>兰蔻粉水保湿狂欢礼盒</p>
+                            <p>￥680.00</p>
+                            <img class="little1" src="images/middlebox5-2-5.jpg"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p>LANCOME</p>
+                            <p>兰蔻粉水保湿狂欢礼盒</p>
+                            <p>￥188.00</p>
+                            <img class="little1" src="images/middlebox5-2-6.jpg"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p>LANCOME</p>
+                            <p>兰蔻粉水保湿狂欢礼盒</p>
+                            <p>￥520.00</p>
+                            <img class="little1" src="images/middlebox5-2-7.jpg"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p>LANCOME</p>
+                            <p>兰蔻粉水保湿狂欢礼盒</p>
+                            <p>￥500.00</p>
+                            <img class="little1" src="images/middlebox5-2-8.jpg"/>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="bottombox3">
+                <ul class="bottombox3-1">
+                    <li>
+                        <a href="#"><img src="images/bottombox3-1.png" alt=""></a>
+                        <em></em>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/bottombox3-2.png" alt=""></a>
+                        <em></em>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/bottombox3-3.png" alt=""></a>
+                        <em></em>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/bottombox3-4.png" alt=""></a>
+                        <em></em>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/bottombox3-5.png" alt=""></a>
+                        <em></em>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/bottombox3-6.png" alt=""></a>
+                        <em></em>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/bottombox3-7.png" alt=""></a>
+                        <em></em>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/bottombox3-8.png" alt=""></a>
+                        <em></em>
+                    </li>
+                </ul>
+            </div>
+        </div>       
+    </div>
+    <!-- 第六块 工具品类 -->
+    <div class="box3" id="box_4">
+        <div class="innerbox3">
+            <div class="topbox3">
+                <p class="topbox3-1">
+                    <span>工具品类</span>
+                    <span>TOOLS</span>  
+                </p> 
+                <ul class="topbox3-2">
+                    <li><a href="#">玫瑰金恋爱物语礼盒</a></li>
+                    <li><a href="#">独家网红刷</a></li>
+                    <li><a href="#">芭比布朗彩妆刷</a></li>
+                    <li><a href="#">眼影刷</a></li>
+                    <li><a href="#">化妆刷套组</a></li>
+                    <li><a href="#">55号粉底刷</a></li>
+                    <li><a href="#">芭比布朗工具</a></li>
+                    <li><a href="#">全部</a></li>
+                </ul> 
+            </div>
+            <div class="middlebox3">
+                <div class="middlebox3-1">
+                    <a href="#"><img src="images/middlebox6-1.jpg"/></a>
+                </div>
+                <ul class="middlebox3-2" id="box3-ul">
+                    <li>
+                        <a href="#">
+                            <p>LANCOME</p>
+                            <p>兰蔻粉水保湿狂欢礼盒</p>
+                            <p>￥770.00</p>
+                            <img class="little1" src="images/middlebox6-2-1.jpg"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p>ESTEELAUDER</p>
+                            <p>兰蔻粉水保湿狂欢礼盒</p>
+                            <p>￥2120.00</p>
+                            <img class="little1" src="images/middlebox6-2-2.jpg"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p>GUERLAIN</p>
+                            <p>兰蔻粉水保湿狂欢礼盒</p>
+                            <p>￥600.00</p>
+                            <img class="little1" src="images/middlebox6-2-3.jpg"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p>LANCOME</p>
+                            <p>兰蔻粉水保湿狂欢礼盒</p>
+                            <p>￥349.00</p>
+                            <img class="little1" src="images/middlebox6-2-4.jpg"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p>LANCOME</p>
+                            <p>兰蔻粉水保湿狂欢礼盒</p>
+                            <p>￥680.00</p>
+                            <img class="little1" src="images/middlebox6-2-5.jpg"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p>LANCOME</p>
+                            <p>兰蔻粉水保湿狂欢礼盒</p>
+                            <p>￥188.00</p>
+                            <img class="little1" src="images/middlebox6-2-6.jpg"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p>LANCOME</p>
+                            <p>兰蔻粉水保湿狂欢礼盒</p>
+                            <p>￥520.00</p>
+                            <img class="little1" src="images/middlebox6-2-7.jpg"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p>LANCOME</p>
+                            <p>兰蔻粉水保湿狂欢礼盒</p>
+                            <p>￥500.00</p>
+                            <img class="little1" src="images/middlebox6-2-8.jpg"/>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="bottombox3">
+                <ul class="bottombox3-1">
+                    <li>
+                        <a href="#"><img src="images/bottombox3-1.png" alt=""></a>
+                        <em></em>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/bottombox3-2.png" alt=""></a>
+                        <em></em>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/bottombox3-3.png" alt=""></a>
+                        <em></em>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/bottombox3-4.png" alt=""></a>
+                        <em></em>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/bottombox3-5.png" alt=""></a>
+                        <em></em>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/bottombox3-6.png" alt=""></a>
+                        <em></em>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/bottombox3-7.png" alt=""></a>
+                        <em></em>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/bottombox3-8.png" alt=""></a>
+                        <em></em>
+                    </li>
+                </ul>
+            </div>
+        </div>       
+    </div>
+    <!-- 第七块 男士护肤品类 -->
+    <div class="box3" id="box_5">
+        <div class="innerbox3">
+            <div class="topbox3">
+                <p class="topbox3-1">
+                    <span>男士护肤品类</span>
+                    <span>MAN SKINCARE</span>  
+                </p> 
+                <ul class="topbox3-2">
+                    <li><a href="#">惠选套装</a></li>
+                    <li><a href="#">控油平衡</a></li>
+                    <li><a href="#">保湿水润</a></li>
+                    <li><a href="#">滋养紧致</a></li>
+                    <li><a href="#">眼部护理</a></li>
+                    <li><a href="#">剃须护理</a></li>
+                    <li><a href="#">眼部护理</a></li>
+                    <li><a href="#">全部</a></li>
+                </ul> 
+            </div>
+            <div class="middlebox3">
+                <div class="middlebox3-1">
+                    <a href="#"><img src="images/middlebox7-1.jpg"/></a>
+                </div>
+                <ul class="middlebox3-2" id="box3-ul">
+                    <li>
+                        <a href="#">
+                            <p>LANCOME</p>
+                            <p>兰蔻粉水保湿狂欢礼盒</p>
+                            <p>￥770.00</p>
+                            <img class="little1" src="images/middlebox7-2-1.jpg"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p>ESTEELAUDER</p>
+                            <p>兰蔻粉水保湿狂欢礼盒</p>
+                            <p>￥2120.00</p>
+                            <img class="little1" src="images/middlebox7-2-2.jpg"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p>GUERLAIN</p>
+                            <p>兰蔻粉水保湿狂欢礼盒</p>
+                            <p>￥600.00</p>
+                            <img class="little1" src="images/middlebox7-2-3.jpg"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p>LANCOME</p>
+                            <p>兰蔻粉水保湿狂欢礼盒</p>
+                            <p>￥349.00</p>
+                            <img class="little1" src="images/middlebox7-2-4.jpg"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p>LANCOME</p>
+                            <p>兰蔻粉水保湿狂欢礼盒</p>
+                            <p>￥680.00</p>
+                            <img class="little1" src="images/middlebox7-2-5.jpg"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p>LANCOME</p>
+                            <p>兰蔻粉水保湿狂欢礼盒</p>
+                            <p>￥188.00</p>
+                            <img class="little1" src="images/middlebox7-2-6.jpg"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p>LANCOME</p>
+                            <p>兰蔻粉水保湿狂欢礼盒</p>
+                            <p>￥520.00</p>
+                            <img class="little1" src="images/middlebox7-2-7.jpg"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p>LANCOME</p>
+                            <p>兰蔻粉水保湿狂欢礼盒</p>
+                            <p>￥500.00</p>
+                            <img class="little1" src="images/middlebox7-2-8.jpg"/>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="bottombox3">
+                <ul class="bottombox3-1">
+                    <li>
+                        <a href="#"><img src="images/bottombox3-1.png" alt=""></a>
+                        <em></em>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/bottombox3-2.png" alt=""></a>
+                        <em></em>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/bottombox3-3.png" alt=""></a>
+                        <em></em>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/bottombox3-4.png" alt=""></a>
+                        <em></em>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/bottombox3-5.png" alt=""></a>
+                        <em></em>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/bottombox3-6.png" alt=""></a>
+                        <em></em>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/bottombox3-7.png" alt=""></a>
+                        <em></em>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/bottombox3-8.png" alt=""></a>
+                        <em></em>
+                    </li>
+                </ul>
+            </div>
+        </div>       
+    </div>
+    <!-- 第八块 洗浴护体品类 -->
+    <div class="box3" id="box_6">
+        <div class="innerbox3">
+            <div class="topbox3">
+                <p class="topbox3-1">
+                    <span>洗浴护体品类</span>
+                    <span>BODY CARE</span>  
+                </p> 
+                <ul class="topbox3-2">
+                    <li><a href="#">惠选套装</a></li>
+                    <li><a href="#">沐浴清洁</a></li>
+                    <li><a href="#">身体护理</a></li>
+                    <li><a href="#">手部护理</a></li>
+                    <li><a href="#">胸部护理</a></li>
+                    <li><a href="#">足部护理</a></li>
+                    <li><a href="#">全部</a></li>
+                </ul> 
+            </div>
+            <div class="middlebox3">
+                <div class="middlebox3-1">
+                    <a href="#"><img src="images/middlebox8-1.jpg"/></a>
+                </div>
+                <ul class="middlebox3-2" id="box3-ul">
+                    <li>
+                        <a href="#">
+                            <p>LANCOME</p>
+                            <p>兰蔻粉水保湿狂欢礼盒</p>
+                            <p>￥770.00</p>
+                            <img class="little1" src="images/middlebox8-2-1.jpg"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p>ESTEELAUDER</p>
+                            <p>兰蔻粉水保湿狂欢礼盒</p>
+                            <p>￥2120.00</p>
+                            <img class="little1" src="images/middlebox8-2-2.jpg"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p>GUERLAIN</p>
+                            <p>兰蔻粉水保湿狂欢礼盒</p>
+                            <p>￥600.00</p>
+                            <img class="little1" src="images/middlebox8-2-3.jpg"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p>LANCOME</p>
+                            <p>兰蔻粉水保湿狂欢礼盒</p>
+                            <p>￥349.00</p>
+                            <img class="little1" src="images/middlebox8-2-4.jpg"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p>LANCOME</p>
+                            <p>兰蔻粉水保湿狂欢礼盒</p>
+                            <p>￥680.00</p>
+                            <img class="little1" src="images/middlebox8-2-5.jpg"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p>LANCOME</p>
+                            <p>兰蔻粉水保湿狂欢礼盒</p>
+                            <p>￥188.00</p>
+                            <img class="little1" src="images/middlebox8-2-6.jpg"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p>LANCOME</p>
+                            <p>兰蔻粉水保湿狂欢礼盒</p>
+                            <p>￥520.00</p>
+                            <img class="little1" src="images/middlebox8-2-7.jpg"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p>LANCOME</p>
+                            <p>兰蔻粉水保湿狂欢礼盒</p>
+                            <p>￥500.00</p>
+                            <img class="little1" src="images/middlebox8-2-8.jpg"/>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="bottombox3">
+                <ul class="bottombox3-1">
+                    <li>
+                        <a href="#"><img src="images/bottombox3-1.png" alt=""></a>
+                        <em></em>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/bottombox3-2.png" alt=""></a>
+                        <em></em>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/bottombox3-3.png" alt=""></a>
+                        <em></em>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/bottombox3-4.png" alt=""></a>
+                        <em></em>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/bottombox3-5.png" alt=""></a>
+                        <em></em>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/bottombox3-6.png" alt=""></a>
+                        <em></em>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/bottombox3-7.png" alt=""></a>
+                        <em></em>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/bottombox3-8.png" alt=""></a>
+                        <em></em>
+                    </li>
+                </ul>
+            </div>
+        </div>       
+    </div>
+    <!-- 第九块 美发护发品类 -->
+    <div class="box3" id="box_7">
+        <div class="innerbox3">
+            <div class="topbox3">
+                <p class="topbox3-1">
+                    <span>美发护发品类</span>
+                    <span>HAIR CARE</span>  
+                </p> 
+                <ul class="topbox3-2">
+                    <li><a href="#">惠选套装</a></li>
+                    <li><a href="#">美发工具</a></li>
+                    <li><a href="#">洗发产品</a></li>
+                    <li><a href="#">护发产品</a></li>
+                    <li><a href="#">眼部护理</a></li>
+                    <li><a href="#">头皮护理</a></li>
+                    <li><a href="#">美发产品</a></li>
+                    <li><a href="#">全部</a></li>
+                </ul> 
+            </div>
+            <div class="middlebox3">
+                <div class="middlebox3-1">
+                    <a href="#"><img src="images/middlebox9-1.jpg"/></a>
+                </div>
+                <ul class="middlebox3-2" id="box3-ul">
+                    <li>
+                        <a href="#">
+                            <p>LANCOME</p>
+                            <p>兰蔻粉水保湿狂欢礼盒</p>
+                            <p>￥770.00</p>
+                            <img class="little1" src="images/middlebox3-2-8.jpg"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p>ESTEELAUDER</p>
+                            <p>兰蔻粉水保湿狂欢礼盒</p>
+                            <p>￥2120.00</p>
+                            <img class="little1" src="images/middlebox7-2-7.jpg"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p>GUERLAIN</p>
+                            <p>兰蔻粉水保湿狂欢礼盒</p>
+                            <p>￥600.00</p>
+                            <img class="little1" src="images/middlebox5-2-6.jpg"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p>LANCOME</p>
+                            <p>兰蔻粉水保湿狂欢礼盒</p>
+                            <p>￥349.00</p>
+                            <img class="little1" src="images/middlebox3-2-5.jpg"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p>LANCOME</p>
+                            <p>兰蔻粉水保湿狂欢礼盒</p>
+                            <p>￥680.00</p>
+                            <img class="little1" src="images/middlebox4-2-4.jpg"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p>LANCOME</p>
+                            <p>兰蔻粉水保湿狂欢礼盒</p>
+                            <p>￥188.00</p>
+                            <img class="little1" src="images/middlebox7-2-3.jpg"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p>LANCOME</p>
+                            <p>兰蔻粉水保湿狂欢礼盒</p>
+                            <p>￥520.00</p>
+                            <img class="little1" src="images/middlebox3-2-2.jpg"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p>LANCOME</p>
+                            <p>兰蔻粉水保湿狂欢礼盒</p>
+                            <p>￥500.00</p>
+                            <img class="little1" src="images/middlebox6-2-1.jpg"/>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="bottombox3">
+                <ul class="bottombox3-1">
+                    <li>
+                        <a href="#"><img src="images/bottombox3-1.png" alt=""></a>
+                        <em></em>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/bottombox3-2.png" alt=""></a>
+                        <em></em>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/bottombox3-3.png" alt=""></a>
+                        <em></em>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/bottombox3-4.png" alt=""></a>
+                        <em></em>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/bottombox3-5.png" alt=""></a>
+                        <em></em>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/bottombox3-6.png" alt=""></a>
+                        <em></em>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/bottombox3-7.png" alt=""></a>
+                        <em></em>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/bottombox3-8.png" alt=""></a>
+                        <em></em>
+                    </li>
+                </ul>
+            </div>
+        </div>       
+    </div>
+    <!-- 猜你喜欢 -->
+    <div class="lastbox">
+        <div class="innerlastbox">
+            <p class="lastboxtop">
+                <span>猜你喜欢</span>
+                <span>GUESS YOU LIKE</span>
+            </p>
+            <div class="lastboxbottom">
+                <div>
+                    <img src="images/lastbox1.jpg" alt="">
+                    <p>CLINIQUE</p>
+                    <p><a href="#">倩碧润肤乳惠选套装</a></p>
+                    <p>￥295.00</p>
+                </div>
+                <div>
+                    <img src="images/lastbox2.jpg" alt="">
+                    <p>CLINIQUE</p>
+                    <p><a href="#">倩碧润肤乳惠选套装</a></p>
+                    <p>￥295.00</p>
+                </div>
+                <div>
+                    <img src="images/lastbox3.jpg" alt="">
+                    <p>CLINIQUE</p>
+                    <p><a href="#">倩碧润肤乳惠选套装</a></p>
+                    <p>￥295.00</p>
+                </div>
+                <div>
+                    <img src="images/lastbox4.jpg" alt="">
+                    <p>CLINIQUE</p>
+                    <p><a href="#">倩碧润肤乳惠选套装</a></p>
+                    <p>￥295.00</p>
+                </div>
+                <div>
+                    <img src="images/lastbox5.jpg" alt="">
+                    <p>CLINIQUE</p>
+                    <p><a href="#">倩碧润肤乳惠选套装</a></p>
+                    <p>￥295.00</p>
+                </div>
+                <div>
+                    <img src="images/lastbox6.jpg" alt="">
+                    <p>CLINIQUE</p>
+                    <p><a href="#">倩碧润肤乳惠选套装</a></p>
+                    <p>￥295.00</p>
+                </div>
+                <div>
+                    <img src="images/lastbox7.jpg" alt="">
+                    <p>CLINIQUE</p>
+                    <p><a href="#">倩碧润肤乳惠选套装</a></p>
+                    <p>￥295.00</p>
+                </div>
+                <div>
+                    <img src="images/lastbox8.jpg" alt="">
+                    <p>CLINIQUE</p>
+                    <p><a href="#">倩碧润肤乳惠选套装</a></p>
+                    <p>￥295.00</p>
+                </div>
+                <div>
+                    <img src="images/lastbox9.jpg" alt="">
+                    <p>CLINIQUE</p>
+                    <p><a href="#">倩碧润肤乳惠选套装</a></p>
+                    <p>￥295.00</p>
+                </div>
+                <div>
+                    <img src="images/lastbox10.jpg" alt="">
+                    <p>CLINIQUE</p>
+                    <p><a href="#">倩碧润肤乳惠选套装</a></p>
+                    <p>￥295.00</p>
+                </div>
+                <div>
+                    <img src="images/lastbox10.jpg" alt="">
+                    <p>CLINIQUE</p>
+                    <p><a href="#">倩碧润肤乳惠选套装</a></p>
+                    <p>￥295.00</p>
+                </div>
+                <div>
+                    <img src="images/lastbox9.jpg" alt="">
+                    <p>CLINIQUE</p>
+                    <p><a href="#">倩碧润肤乳惠选套装</a></p>
+                    <p>￥295.00</p>
+                </div>
+                <div>
+                    <img src="images/lastbox6.jpg" alt="">
+                    <p>CLINIQUE</p>
+                    <p><a href="#">倩碧润肤乳惠选套装</a></p>
+                    <p>￥295.00</p>
+                </div>
+                <div>
+                    <img src="images/lastbox7.jpg" alt="">
+                    <p>CLINIQUE</p>
+                    <p><a href="#">倩碧润肤乳惠选套装</a></p>
+                    <p>￥295.00</p>
+                </div>
+                <div>
+                    <img src="images/lastbox8.jpg" alt="">
+                    <p>CLINIQUE</p>
+                    <p><a href="#">倩碧润肤乳惠选套装</a></p>
+                    <p>￥295.00</p>
+                </div>
+                <div>
+                    <img src="images/lastbox5.jpg" alt="">
+                    <p>CLINIQUE</p>
+                    <p><a href="#">倩碧润肤乳惠选套装</a></p>
+                    <p>￥295.00</p>
+                </div>
+                <div>
+                    <img src="images/lastbox4.jpg" alt="">
+                    <p>CLINIQUE</p>
+                    <p><a href="#">倩碧润肤乳惠选套装</a></p>
+                    <p>￥295.00</p>
+                </div>
+                <div>
+                    <img src="images/lastbox1.jpg" alt="">
+                    <p>CLINIQUE</p>
+                    <p><a href="#">倩碧润肤乳惠选套装</a></p>
+                    <p>￥295.00</p>
+                </div>
+                <div>
+                    <img src="images/lastbox2.jpg" alt="">
+                    <p>CLINIQUE</p>
+                    <p><a href="#">倩碧润肤乳惠选套装</a></p>
+                    <p>￥295.00</p>
+                </div>
+                <div>
+                    <img src="images/lastbox3.jpg" alt="">
+                    <p>CLINIQUE</p>
+                    <p><a href="#">倩碧润肤乳惠选套装</a></p>
+                    <p>￥295.00</p>
+                </div>
+            </div>            
+        </div>
+    </div>
+    <!-- footer -->
+    <footer>
+        <div class="innerfooter">
+            <div class="footertop">
+                <div class="footertop1">
+                    <div class="footertop1-1">
+                        <img src="images/footer1.png" alt="">
+                        <p>顺丰EMS速达</p>
+                    </div>
+                    <em class="xian"></em>
+                    <div class="footertop1-1">
+                        <img src="images/footer2.png" alt="">
+                        <p>丰富礼赠</p>
+                    </div>
+                    <em class="xian"></em>
+                    <div class="footertop1-1">
+                        <img src="images/footer3.png" alt="">
+                        <p>100%官方正品</p>
+                    </div>
+                    <em class="xian"></em>
+                    <div class="footertop1-1">
+                        <img src="images/footer4.png" alt="">
+                        <p>无障碍退款</p>
+                    </div>
+                    <em class="xian"></em>
+                    <div class="footertop1-1">
+                        <img src="images/footer5.png" alt="">
+                        <p>安全支付</p>
+                    </div>
+                </div>
+                <ul class="footertop2">
+                    <li class="footertop2-li">
+                        <a class="topfootertop2" href="#">购物流程</a>
+                        <ul>
+                            <li class="topfootertop2-li"><a href="#">大宗采购/团购</a></li>
+                            <li class="topfootertop2-li"><a href="#">丝芙兰预付卡章程</a></li>
+                        </ul>
+                    </li>
+                    <li class="footertop2-li">
+                        <a class="topfootertop2" href="#">支付/配送</a>
+                        <ul>
+                            <li class="topfootertop2-li"><a href="#">货到付款</a></li>
+                            <li class="topfootertop2-li"><a href="#">在线支付</a></li>
+                            <li class="topfootertop2-li"><a href="#">配送时间</a></li>
+                        </ul>
+                    </li>
+                    <li class="footertop2-li">
+                        <a class="topfootertop2" href="#">售后服务</a>
+                        <ul>
+                            <li class="topfootertop2-li"><a href="#">退换货规定</a></li>
+                            <li class="topfootertop2-li"><a href="#">退换货及退款说明</a></li>
+                        </ul>
+                    </li>
+                    <li class="footertop2-li">
+                        <a class="topfootertop2" href="#">关于丝芙兰</a>
+                        <ul>
+                            <li class="topfootertop2-li"><a href="#">公司介绍</a></li>
+                            <li class="topfootertop2-li"><a href="#">联系我们</a></li>
+                        </ul>
+                    </li>
+                    <li class="lastli">
+                        <a class="topfootertop2" href="#">网上订购咨询热线 ：400 670 0055</a>
+                    </li>
+                    <img src="images/footer6.png"/>
+                </ul>
+            </div>
+            <div class="footerbottom">
+                <div class="innerfooterbottom">
+                    <div class="centerfooter">
+                        <p>
+                            <img src="images/footer7.png"/>
+                            <a href="#">沪公网安备31010103103277号</a>
+                            <a href="#">ICP备案序号:沪ICP备05026645号</a>
+                            <a href="#">网站使用条款</a>
+                            <a href="#">严正声明</a>
+                        </p>
+                        <span>本网站隶属于丝芙兰（上海）化妆品销售有限公司（企业法人营业执照）</span>
+                    </div>
+                    <p class="bottombottom">
+                        <img src="images/footer8.png"/>
+                    </p>
+                </div>                
+            </div>
+        </div>       
+    </footer>
+    <!-- 瀑布流 -->
+    <div id="wrap">
+        <ul>
+
+        </ul>
+    </div>
+    <script src="script/header.js"></script>
+    <script src="script/banner.js"></script>
+    <script src="script/box1.js"></script>
+    <script src="script/top.js"></script>
+    <script src="script/aside.js"></script>
+    <script src="script/box2.js"></script>
+    <script src="script/ajax.js"></script>
+    <script src="script/gouwuche.js"></script>
+    
+</body>
+</html>
